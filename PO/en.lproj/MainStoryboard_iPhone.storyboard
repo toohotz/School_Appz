@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="112">
+    <dependencies>
+        <deployment version="1280" identifier="iOS"/>
+        <development version="4500" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--C Portal View Controller - CUNY Portal-->
+        <scene sceneID="fDQ-eE-AuC">
+            <objects>
+                <viewController id="pfB-Vf-Sgk" customClass="cPortalViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VFp-4Z-JdN">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="Vz3-1Z-hoN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CUNY Portal" id="O1k-jg-hyC"/>
+                    <connections>
+                        <outlet property="theWebView" destination="Vz3-1Z-hoN" id="ZZG-ec-b5n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2dc-kg-5rJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="1727"/>
+        </scene>
+        <!--RegistrationVC - Registration-->
+        <scene sceneID="103">
+            <objects>
+                <viewController id="96" customClass="RegistrationVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="100">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please choose a username" lineBreakMode="tailTruncation" minimumFontSize="10" id="147">
+                                <rect key="frame" x="20" y="20" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username" minimumFontSize="17" clearButtonMode="whileEditing" id="148">
+                                <rect key="frame" x="21" y="49" width="198" height="31"/>
+                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="setzUser:" destination="96" eventType="editingDidEndOnExit" id="175"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please choose a password" lineBreakMode="tailTruncation" minimumFontSize="10" id="149">
+                                <rect key="frame" x="20" y="100" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" clearsOnBeginEditing="YES" minimumFontSize="17" id="150">
+                                <rect key="frame" x="20" y="129" width="198" height="31"/>
+                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="setzPass:" destination="96" eventType="editingDidEndOnExit" id="176"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="151">
+                                <rect key="frame" x="220" y="359" width="89" height="37"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goDOB:" destination="96" eventType="touchUpInside" id="Xh7-p7-K0l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="kyv-qa-q25" appends="YES" id="aBJ-Ub-u9d"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Registration" id="99"/>
+                    <connections>
+                        <outlet property="getzPass" destination="150" id="174"/>
+                        <outlet property="getzUser" destination="148" id="173"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="102" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="kyv-qa-q25"/>
+            </objects>
+            <point key="canvasLocation" x="447" y="1727"/>
+        </scene>
+        <!--LogVC - Login 2-->
+        <scene sceneID="6LP-kQ-ZMy">
+            <objects>
+                <viewController id="MqV-kH-uE0" customClass="logVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AHw-Jo-A6y">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username" minimumFontSize="17" id="D5q-6l-gR4">
+                                <rect key="frame" x="20" y="53" width="240" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="userKBClose:" destination="MqV-kH-uE0" eventType="editingDidEndOnExit" id="peO-QR-ugp"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" minimumFontSize="17" id="PTf-PS-aqg">
+                                <rect key="frame" x="14" y="172" width="246" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="passKBClose:" destination="MqV-kH-uE0" eventType="editingDidEndOnExit" id="hCC-1p-8KE"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Username" lineBreakMode="tailTruncation" minimumFontSize="10" id="Sfg-xw-dmT">
+                                <rect key="frame" x="20" y="13" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password" lineBreakMode="tailTruncation" minimumFontSize="10" id="QaU-0r-2P6">
+                                <rect key="frame" x="20" y="119" width="196" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zim-Mg-FKC">
+                                <rect key="frame" x="99" y="386" width="122" height="32"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" image="login button.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="MqV-kH-uE0" eventType="touchUpInside" id="BEc-X1-rMi"/>
+                                    <action selector="loginPO:" destination="96" eventType="touchUpInside" id="Taa-x0-R3u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="H1a-63-xXy">
+                                <rect key="frame" x="89" y="313" width="142" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Test Connection">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testConnection:" destination="MqV-kH-uE0" eventType="touchDragInside" id="eQb-W1-zqe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login 2" id="G5l-9y-O1N"/>
+                    <connections>
+                        <outlet property="loginBtn" destination="Zim-Mg-FKC" id="YSR-A1-xkG"/>
+                        <outlet property="password" destination="PTf-PS-aqg" id="YmJ-Ix-47f"/>
+                        <outlet property="username" destination="D5q-6l-gR4" id="wHo-vN-sHc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C2f-vy-5mg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374" y="-204"/>
+        </scene>
+        <!--Test Prof View Controller-->
+        <scene sceneID="vRy-ly-MK3">
+            <objects>
+                <viewController id="0hS-FZ-AfE" customClass="testProfViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i6g-04-npF">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="anf-3c-WJn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6EV-k9-9oa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-804" y="989"/>
+        </scene>
+        <!--Buildings View Controller - Buildings-->
+        <scene sceneID="CDO-7y-PFH">
+            <objects>
+                <tableViewController id="EjR-Sr-h7R" customClass="buildingsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Qm6-1j-tn1">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="gk7-bU-6gB">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EjR-Sr-h7R" id="bLn-cl-c8a"/>
+                            <outlet property="delegate" destination="EjR-Sr-h7R" id="W6j-B1-rQp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Buildings" id="CcJ-Tm-N6g"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S8V-Ix-3BA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-463" y="1155"/>
+        </scene>
+        <!--InitialVC-->
+        <scene sceneID="h8d-rJ-beW">
+            <objects>
+                <viewController id="NIw-IE-mIO" customClass="initialVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Yl-JU-3PP">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="H8Q-Hl-33y">
+                                <rect key="frame" x="20" y="352" width="112" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0hS-FZ-AfE" kind="push" id="MbP-mB-S1D"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="20f-jY-PGL">
+                                <rect key="frame" x="188" y="352" width="112" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Registration">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="96" kind="push" id="lzU-Tk-Kud"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qRs-1L-hdL">
+                                <rect key="frame" x="110" y="238" width="110" height="26"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="cuny_portal.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pfB-Vf-Sgk" kind="push" id="o4R-vS-WGk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fbt-yY-muh">
+                                <rect key="frame" x="110" y="195" width="110" height="25"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="buidingz.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EjR-Sr-h7R" kind="push" id="Xf6-e4-XWG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hn7-8k-ukj">
+                                <rect key="frame" x="110" y="137" width="110" height="26"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="calendar_button.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8yp-pp-9tk" kind="push" id="ywc-pB-1hp"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="RH3-pQ-wx7">
+                                <rect key="frame" x="0.0" y="-45" width="320" height="133"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iFk-5W-Coy"/>
+                    <connections>
+                        <outlet property="mapButton" destination="qRs-1L-hdL" id="QDk-7i-ZR8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDH-41-Edq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-24" y="951"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="g4b-6B-w0h">
+            <objects>
+                <viewController id="jVd-Mb-JqE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZBG-C9-gvh">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KPS-Ys-dTS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="720"/>
+        </scene>
+        <!--New View Controller-->
+        <scene sceneID="02J-SD-sXn">
+            <objects>
+                <viewController id="iAr-DF-NnC" customClass="NewViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vTc-Fu-zYm">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bnd-zk-b8d">
+                                <rect key="frame" x="0.0" y="41" width="174" height="419"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="iAr-DF-NnC" id="GbJ-kq-AYC"/>
+                                    <outlet property="delegate" destination="iAr-DF-NnC" id="tpC-Rs-M8P"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lag-Rf-ezk"/>
+                    <connections>
+                        <outlet property="myTV" destination="bnd-zk-b8d" id="85f-q6-ZNc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VKe-NI-mGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="1045"/>
+        </scene>
+        <!--View Controller - Welcome-->
+        <scene sceneID="118">
+            <objects>
+                <viewController id="111" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="115">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="PO Login/Registration" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="121">
+                                <rect key="frame" x="55" y="20" width="213" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="122">
+                                <rect key="frame" x="217" y="394" width="72" height="37"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="124">
+                                <rect key="frame" x="11" y="394" width="85" height="37"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="219">
+                                <rect key="frame" x="124" y="394" width="72" height="37"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qwc-da-k6s">
+                                <rect key="frame" x="121" y="323" width="78" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Login 2">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MqV-kH-uE0" kind="push" id="7EF-Sf-Fdj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ORN-G2-rAi">
+                                <rect key="frame" x="216" y="323" width="81" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="New VC">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iaF-GJ-yvS">
+                                <rect key="frame" x="17" y="290" width="79" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="BBoard">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fU1-6o-FfE">
+                                <rect key="frame" x="121" y="228" width="72" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Reg 2">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vf1-Gw-pxw">
+                                <rect key="frame" x="128" y="104" width="64" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="maps">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gjA-Ej-OfH" kind="push" id="ZyN-yW-0j6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="114"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="117" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374" y="421"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="120">
+            <objects>
+                <navigationController id="112" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="113">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NIw-IE-mIO" kind="relationship" relationship="rootViewController" id="bbH-f3-b2m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="119" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-525" y="421"/>
+        </scene>
+        <!--Mop View Controller-->
+        <scene sceneID="ees-8J-eLp">
+            <objects>
+                <viewController id="gjA-Ej-OfH" customClass="mopViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FG3-Bx-F8G">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="D4I-VY-5I0">
+                                <rect key="frame" x="0.0" y="2" width="320" height="460"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oWf-Nq-wZs"/>
+                    <connections>
+                        <outlet property="mapView" destination="D4I-VY-5I0" id="xN0-Af-C5f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v6F-EY-Pnd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24" y="66"/>
+        </scene>
+        <!--CalendarVC - Calendar-->
+        <scene sceneID="T6P-tZ-aLK">
+            <objects>
+                <viewController id="8yp-pp-9tk" customClass="CalendarVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F4C-JK-Oc9">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="5vB-hA-xeE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Calendar" id="j6B-iP-TuF">
+                        <barButtonItem key="rightBarButtonItem" title="Print" id="fvw-1G-G2J">
+                            <color key="tintColor" red="0.40000000596046448" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="printScreen:" destination="8yp-pp-9tk" id="iaV-mc-Ek6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="calendarWebView" destination="5vB-hA-xeE" id="z7u-QL-w5V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tmu-Lp-VDs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-463" y="1727"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buidingz.png" width="141" height="40"/>
+        <image name="calendar_button.png" width="141" height="40"/>
+        <image name="cuny_portal.png" width="141" height="40"/>
+        <image name="login button.png" width="316" height="86"/>
+    </resources>
+    <classes>
+        <class className="CalendarVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CalendarVC.h"/>
+            <relationships>
+                <relationship kind="action" name="printScreen:"/>
+                <relationship kind="outlet" name="calendarWebView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="NewViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="myTV" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="RegistrationVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RegistrationVC.h"/>
+            <relationships>
+                <relationship kind="action" name="goDOB:"/>
+                <relationship kind="action" name="loginPO:"/>
+                <relationship kind="action" name="setzPass:"/>
+                <relationship kind="action" name="setzUser:"/>
+                <relationship kind="outlet" name="getzPass" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="getzUser" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="swipeLeft" candidateClass="UISwipeGestureRecognizer"/>
+            </relationships>
+        </class>
+        <class className="buildingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/buildingsViewController.h"/>
+        </class>
+        <class className="cPortalViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/cPortalViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="theWebView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="initialVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/initialVC.h"/>
+            <relationships>
+                <relationship kind="outlet" name="calendarButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="mapButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="logVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/logVC.h"/>
+            <relationships>
+                <relationship kind="action" name="login:"/>
+                <relationship kind="action" name="passKBClose:"/>
+                <relationship kind="action" name="testConnection:"/>
+                <relationship kind="action" name="userKBClose:"/>
+                <relationship kind="outlet" name="loginBtn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="username" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="mopViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/mopViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="testProfViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/testProfViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="phoneNumber" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="professorIcon" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="844" systemVersion="11A511" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Car">
+        <attribute name="Brand" optional="YES" attributeType="String"/>
+        <attribute name="Year" optional="YES" attributeType="Integer 32" defaultValueString="0"/>
+    </entity>
+    <entity name="Person">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0"/>
+        <attribute name="height" optional="YES" attributeType="Float" defaultValueString="0.0"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 32" defaultValueString="0"/>
+        <relationship name="relationship" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="relationship" inverseEntity="Person"/>
+    </entity>
+    <elements>
+        <element name="Car" positionX="171" positionY="234" width="128" height="75"/>
+        <element name="Person" positionX="160" positionY="192" width="128" height="105"/>
+    </elements>
+</model>
