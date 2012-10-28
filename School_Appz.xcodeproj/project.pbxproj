@@ -57,7 +57,6 @@
 		4347C718163CA22800978B14 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4347C5AD163C9F6700978B14 /* Default-568h@2x.png */; };
 		4347C719163CA22800978B14 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4347C5AE163C9F6700978B14 /* Default.png */; };
 		4347C71A163CA22800978B14 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4347C5AF163C9F6700978B14 /* Default@2x.png */; };
-		4347C71B163CA22800978B14 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4347C5B2163C9F6700978B14 /* Icon.png */; };
 		4347C71C163CA22800978B14 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4347C5B3163C9F6700978B14 /* Icon@2x.png */; };
 		4347C71D163CA22800978B14 /* loginpic.png in Resources */ = {isa = PBXBuildFile; fileRef = 4347C5B6163C9F6700978B14 /* loginpic.png */; };
 		4347C71E163CA22800978B14 /* loginpic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4347C5B7163C9F6700978B14 /* loginpic@2x.png */; };
@@ -104,6 +103,8 @@
 		4347C747163CA27500978B14 /* Queens_College_Campus(iPhone)@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4347C617163C9F6700978B14 /* Queens_College_Campus(iPhone)@2x.jpg */; };
 		4347C74A163CA41600978B14 /* KeychainWrapper.m in Resources */ = {isa = PBXBuildFile; fileRef = 4347C749163CA40800978B14 /* KeychainWrapper.m */; };
 		4347C74B163CA5AD00978B14 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C749163CA40800978B14 /* KeychainWrapper.m */; };
+		43C146E2163CB1F2004EEEE5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C146E1163CB1F2004EEEE5 /* icon.png */; };
+		43C146E4163CB352004EEEE5 /* ipadIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C146E3163CB352004EEEE5 /* ipadIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,7 +115,6 @@
 		4347C5AF163C9F6700978B14 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4347C5B0163C9F6700978B14 /* Device_Resolutions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Device_Resolutions.h; sourceTree = "<group>"; };
 		4347C5B1163C9F6700978B14 /* FYI.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = FYI.rtf; sourceTree = "<group>"; };
-		4347C5B2163C9F6700978B14 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		4347C5B3163C9F6700978B14 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		4347C5B6163C9F6700978B14 /* loginpic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginpic.png; sourceTree = "<group>"; };
 		4347C5B7163C9F6700978B14 /* loginpic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginpic@2x.png"; sourceTree = "<group>"; };
@@ -263,6 +263,9 @@
 		4347C677163CA0DE00978B14 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		4347C748163CA40800978B14 /* KeychainWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
 		4347C749163CA40800978B14 /* KeychainWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		43C146E1163CB1F2004EEEE5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		43C146E3163CB352004EEEE5 /* ipadIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipadIcon.png; sourceTree = "<group>"; };
+		43C146E5163CB489004EEEE5 /* POz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = POz.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,13 +294,14 @@
 				4347C5AB163C9F6700978B14 /* cbp.png */,
 				4347C748163CA40800978B14 /* KeychainWrapper.h */,
 				4347C749163CA40800978B14 /* KeychainWrapper.m */,
+				43C146E1163CB1F2004EEEE5 /* icon.png */,
 				4347C5AC163C9F6700978B14 /* cloud.png */,
 				4347C5AD163C9F6700978B14 /* Default-568h@2x.png */,
+				43C146E3163CB352004EEEE5 /* ipadIcon.png */,
 				4347C5AE163C9F6700978B14 /* Default.png */,
 				4347C5AF163C9F6700978B14 /* Default@2x.png */,
 				4347C5B0163C9F6700978B14 /* Device_Resolutions.h */,
 				4347C5B1163C9F6700978B14 /* FYI.rtf */,
-				4347C5B2163C9F6700978B14 /* Icon.png */,
 				4347C5B3163C9F6700978B14 /* Icon@2x.png */,
 				4347C5B6163C9F6700978B14 /* loginpic.png */,
 				4347C5B7163C9F6700978B14 /* loginpic@2x.png */,
@@ -492,6 +496,7 @@
 		4347C646163CA01D00978B14 /* POz */ = {
 			isa = PBXGroup;
 			children = (
+				43C146E5163CB489004EEEE5 /* POz.entitlements */,
 				4347C64F163CA01D00978B14 /* AppDelegate.h */,
 				4347C650163CA01D00978B14 /* AppDelegate.m */,
 				4347C658163CA01D00978B14 /* MainStoryboard_iPhone.storyboard */,
@@ -583,7 +588,6 @@
 				4347C718163CA22800978B14 /* Default-568h@2x.png in Resources */,
 				4347C719163CA22800978B14 /* Default.png in Resources */,
 				4347C71A163CA22800978B14 /* Default@2x.png in Resources */,
-				4347C71B163CA22800978B14 /* Icon.png in Resources */,
 				4347C71C163CA22800978B14 /* Icon@2x.png in Resources */,
 				4347C71D163CA22800978B14 /* loginpic.png in Resources */,
 				4347C71E163CA22800978B14 /* loginpic@2x.png in Resources */,
@@ -620,6 +624,8 @@
 				4347C73D163CA22800978B14 /* Queens_College_Campus(iPhone)-568@2x.png in Resources */,
 				4347C73E163CA22800978B14 /* register.png in Resources */,
 				4347C73F163CA22800978B14 /* register@2x.png in Resources */,
+				43C146E2163CB1F2004EEEE5 /* icon.png in Resources */,
+				43C146E4163CB352004EEEE5 /* ipadIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,6 +761,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = PO/PO.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Geovany Martinez (Z77CM9GAE9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Geovany Martinez (Z77CM9GAE9)";
 				COPY_PHASE_STRIP = NO;
@@ -795,6 +802,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = PO/PO.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Geovany Martinez (Z77CM9GAE9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Geovany Martinez (Z77CM9GAE9)";
 				COPY_PHASE_STRIP = YES;
