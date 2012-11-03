@@ -69,6 +69,16 @@ int selection;
     return self;
 }
 
+-(void) setupProfessorNewView
+{
+    
+    
+    
+    
+    
+    
+}
+
 
 #pragma mark - Custom Navbar
 
@@ -99,6 +109,7 @@ int selection;
 {
     N_7th *currentVC = [[N_7th alloc] init];
     [self presentViewController:currentVC animated:YES completion:NULL];
+    [self.view addSubview:currentVC.view];
 }
 
 
@@ -186,7 +197,13 @@ int selection;
 -(void) pageSetup
 {
     // Setting up of labels
-    UIView *professorView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, self.view.frame.size.height)];
+    
+//    UIView *professorView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, self.view.frame.size.height)];
+    
+//    UIViewController *professorView = [[UIViewController alloc] initWithFrame:CGRectMake(0, 100, 640, 960)];
+    
+    UIViewController *professorView = [[UIViewController alloc] init];
+    professorView.view.bounds = self.view.bounds;
     
 //    UIView *professorView = [[UIView alloc ]initWithFrame:CGRectMake(0, 0, 320, 480)];
 //    UIView *professorView = [[UIView alloc ] init];
@@ -214,9 +231,11 @@ int selection;
     bzButton.leftBarButtonItem = backButton;
     [navBar pushNavigationItem:bzButton animated:NO];
     
-    [professorView addSubview:navBar];
+    [professorView.view addSubview:navBar];
     
+//    remove main view
     
+
     
 //    label formattings
     
@@ -229,11 +248,13 @@ int selection;
     [telephone setEditable:NO];
     [professorName setFont:[UIFont fontWithName:@"TrebuchetMS-Bold" size:18]];
     
-    professorView.frame = self.view.bounds;
-    
+//    professorView.frame = self.view.bounds;
+    professorView.view.frame = self.view.bounds;
+    [professorView.view setBackgroundColor:[UIColor whiteColor]];
     UIViewController *profVC = [[UIViewController alloc] init ];
+
 //    profVC.view.frame = self.view.bounds;
-    [profVC.view setBackgroundColor:[UIColor whiteColor]];
+//    [profVC.view setBackgroundColor:[UIColor whiteColor]];
     NSLog(@"The selection is: %i", selection);
     
 //    setup custom navigation back to previous tableview
@@ -246,16 +267,18 @@ int selection;
         [profVC.view addSubview:email];
         [profVC.view addSubview:emailLabel];
         [profVC.view addSubview:professorName];
-        
-        
-        
+   
+        NSArray *someArray = [[NSArray alloc] initWithObjects:@"Object 1", @"Object 2", @"Object 3", nil];
         
         
         [professorName setText:@"Professor Africk"];
         [email setText:@"hafrick@citytech.cuny.edu"];
+        [email setText:[someArray objectAtIndex:2]];
         [telephone setText:@"1.718.260.5380"];
 
-        [self.view addSubview:profVC.view];
+//        [self.view addSubview:profVC.view];
+        [self presentViewController:professorView animated:NO completion:NULL];
+
     }
     
      if (selection == BENALKI) {
@@ -642,15 +665,15 @@ int selection;
 //  settings views to screen
     
     
-[self.view addSubview:professorView];
+//[self.view addSubview:professorView];
 
-[professorView addSubview:telephone];
-[professorView addSubview:telephoneLabel];
-[professorView addSubview:emailLabel];
-[professorView addSubview:email];
+[professorView.view addSubview:telephone];
+[professorView.view addSubview:telephoneLabel];
+[professorView.view addSubview:emailLabel];
+[professorView.view addSubview:email];
 
     
-            [self.navigationController pushViewController:profVC animated:YES];
+//            [self.navigationController pushViewController:profVC animated:YES];
 }
 
 #pragma mark -
@@ -847,9 +870,108 @@ int selection;
         selection = HAN;
         [self pageSetup];
     }
+    
+    else if (indexPath.row == HARROW)
+    {
+        selection = HARROW;
+        [self pageSetup];
+    }
+    
+    else if (indexPath.row == HILL)
+    {
+        selection = HILL;
+        [self pageSetup];
+    }
+    
+    else if (indexPath.row == KATZ)
+    {
+        selection = KATZ;
+        [self pageSetup];
+    }
+    
+    else if (indexPath.row == KRAMER)
+    {
+        selection = KRAMER;
+        [self pageSetup];
+    }
+    
+    else if (indexPath.row == LIOU_MARK)
+    {
+        selection = LIOU_MARK;
+        [self pageSetup];
+    }
+    
+    else if (indexPath.row == MORGULIS)
+    {
+        selection = MORGULIS;
+        [self pageSetup];
+    }
+    
+    else if (indexPath.row == NATOV)
+    {
+        selection = NATOV;
+        [self pageSetup];
+    }
+    
+    else if (indexPath.row == RAPPAPORT)
+    {
+        selection = RAPPAPORT;
+        [self pageSetup];
+        
+    }
+    
+    else if (indexPath.row == ROJAS)
+    {
+        selection = ROJAS;
+        [self pageSetup];
+    }
+    
+    else if (indexPath.row == ROZENBLYUM)
+    {
+        selection = ROZENBLYUM;
+        [self pageSetup];
+    }
+    
+    else if (indexPath.row == SCHWARZ)
+    {
+        selection = SCHWARZ;
+        [self pageSetup];
+    }
+    
+    else if (indexPath.row == SHAVER)
+    {
+        selection = SHAVER;
+        [self pageSetup];
+    }
+    
+    else if (indexPath.row == SHOUTENS)
+    {
+        selection = SHOUTENS;
+        [self pageSetup];
+    }
+    
+    else if (indexPath.row == STOCKTON_BENNET)
+    {
+        selection = STOCKTON_BENNET;
+        [self pageSetup];
+    }
+    
+    else if (indexPath.row == TARAPOREVALA)
+    {
+        selection = TARAPOREVALA;
+        [self pageSetup];
+    }
+    
+    else if (indexPath.row == TRADLER)
+    {
+        selection = TRADLER;
+        [self pageSetup];
+    }
+    
+        
     // Navigation logic may go here. Create and push another view controller.
     /*
-     DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"Nib name" bundle:nil];
      // ...
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];

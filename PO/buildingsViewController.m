@@ -54,7 +54,7 @@
     [self initialViewSetup];
     self.navigationController.navigationBarHidden = NO;
     [self initTableView];
-    [self navBarSetup];
+
 }
 
 

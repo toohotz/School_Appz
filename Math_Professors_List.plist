@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Professor Africk</string>
+	<string>Professor Benalki</string>
+	<string>Professor Bruno</string>
+	<string>Professor Cermele</string>
+	<string>Professor Chen</string>
+	<string>Professor Chosid</string>
+	<string>ProfessorDeraney</string>
+	<string>Professor Desantis </string>
+	<string>Professor Ellner</string>
+	<string>Professor Gelbwasser</string>
+	<string>Professor Ghosh-Dastidar</string>
+	<string>Professor Goubran</string>
+	<string>Professor Greenstein</string>
+	<string>Professor Halleck</string>
+	<string>Professor Han</string>
+	<string>Professor Harrow</string>
+	<string>Professor Hill</string>
+	<string>Professor Katz</string>
+	<string>Professor Kramer</string>
+	<string>Professor Liou-Mark</string>
+	<string>Professor Morgulis</string>
+	<string>Professor Natov</string>
+	<string>Professor Rappaport</string>
+	<string>Professor Rojas</string>
+	<string>Professor Rozenblyum</string>
+	<string>Professor Schwarz</string>
+	<string>Professor Shaver</string>
+	<string>Professor Shoutens</string>
+	<string>Professor Singh</string>
+	<string>Professor Stockton-Bennet</string>
+	<string>Professor Taraporevala</string>
+	<string>Professor Tradler</string>
+</array>
+</plist>

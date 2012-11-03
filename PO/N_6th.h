@@ -13,5 +13,6 @@
 {
     NSArray *professors;
     UITableView *tableView;
+    
 }
 @end

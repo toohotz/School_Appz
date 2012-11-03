@@ -20,7 +20,7 @@
 //    names of math professors
     N_7th *Africk, *Swaine, *Singh;
     UITableView *tableView;
-    
+    UIViewController *newProfessorView;
     
 }
 

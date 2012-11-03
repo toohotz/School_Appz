@@ -11,6 +11,7 @@
 #include "N_7th.h"
 #include "N_6th.h"
 #include "N_5th.h"
+#include "mathProfessorsViewController.h"
 
 @interface N_ViewController ()
 
@@ -138,9 +139,12 @@
     N_7th *mathProfessorsVC = [[N_7th alloc] init];
     N_5th *fifthFloorProfessors = [[N_5th alloc] init];
     N_6th *physicsProfessorsVC = [[N_6th alloc] init];
+    mathProfessorsViewController *mathProz = [[mathProfessorsViewController alloc] init];
+    
     
     if (indexPath.row == 0) {
-        [self presentViewController:mathProfessorsVC animated:YES completion:NULL];
+//        [self presentViewController:mathProfessorsVC animated:YES completion:NULL];
+        [self presentViewController:mathProz animated:YES completion:NULL];
     }
     
     if (indexPath.row == 5) {

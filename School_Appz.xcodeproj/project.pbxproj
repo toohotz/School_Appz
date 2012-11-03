@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43415FC316444CBE0067943F /* mathProfessorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FC216444CBE0067943F /* mathProfessorsViewController.m */; };
+		43415FC516444D490067943F /* N_1st.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FAD16444C850067943F /* N_1st.m */; };
+		43415FC716444D490067943F /* N_4th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FAF16444C850067943F /* N_4th.m */; };
+		43415FC916444D490067943F /* N_5th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FB116444C850067943F /* N_5th.m */; };
+		43415FCB16444D490067943F /* N_6th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FB316444C850067943F /* N_6th.m */; };
+		43415FCD16444D490067943F /* N_7th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FB516444C850067943F /* N_7th.m */; };
+		43415FD016444D490067943F /* N_8th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FB716444C850067943F /* N_8th.m */; };
+		43415FD216444D490067943F /* N_9th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FB916444C850067943F /* N_9th.m */; };
+		43415FD416444D490067943F /* N_10th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FBB16444C850067943F /* N_10th.m */; };
+		43415FD616444D490067943F /* N_11th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FBD16444C850067943F /* N_11th.m */; };
+		43415FD816444D490067943F /* N_12th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FBF16444C850067943F /* N_12th.m */; };
 		4347C668163CA09200978B14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4347C667163CA09200978B14 /* UIKit.framework */; };
 		4347C66A163CA09800978B14 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4347C669163CA09800978B14 /* Security.framework */; };
 		4347C66C163CA09F00978B14 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4347C66B163CA09F00978B14 /* MapKit.framework */; };
@@ -29,16 +40,6 @@
 		4347C6FC163CA1BF00978B14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C5EE163C9F6700978B14 /* main.m */; };
 		4347C6FD163CA1BF00978B14 /* mapsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C5F0163C9F6700978B14 /* mapsVC.m */; };
 		4347C6FE163CA1BF00978B14 /* mopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C5F2163C9F6700978B14 /* mopViewController.m */; };
-		4347C6FF163CA1BF00978B14 /* N_10th.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C5F4163C9F6700978B14 /* N_10th.m */; };
-		4347C700163CA1BF00978B14 /* N_11th.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C5F6163C9F6700978B14 /* N_11th.m */; };
-		4347C701163CA1BF00978B14 /* N_12th.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C5F8163C9F6700978B14 /* N_12th.m */; };
-		4347C702163CA1BF00978B14 /* N_1st.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C5FA163C9F6700978B14 /* N_1st.m */; };
-		4347C703163CA1BF00978B14 /* N_4th.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C5FC163C9F6700978B14 /* N_4th.m */; };
-		4347C704163CA1BF00978B14 /* N_5th.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C5FE163C9F6700978B14 /* N_5th.m */; };
-		4347C705163CA1BF00978B14 /* N_6th.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C600163C9F6700978B14 /* N_6th.m */; };
-		4347C706163CA1BF00978B14 /* N_7th.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C602163C9F6700978B14 /* N_7th.m */; };
-		4347C707163CA1BF00978B14 /* N_8th.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C604163C9F6700978B14 /* N_8th.m */; };
-		4347C708163CA1BF00978B14 /* N_9th.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C606163C9F6700978B14 /* N_9th.m */; };
 		4347C709163CA1BF00978B14 /* N_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C609163C9F6700978B14 /* N_ViewController.m */; };
 		4347C70A163CA1BF00978B14 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C60B163C9F6700978B14 /* NewViewController.m */; };
 		4347C70B163CA1BF00978B14 /* P_BuildingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C60D163C9F6700978B14 /* P_BuildingViewController.m */; };
@@ -105,9 +106,34 @@
 		4347C74B163CA5AD00978B14 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C749163CA40800978B14 /* KeychainWrapper.m */; };
 		43C146E2163CB1F2004EEEE5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C146E1163CB1F2004EEEE5 /* icon.png */; };
 		43C146E4163CB352004EEEE5 /* ipadIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C146E3163CB352004EEEE5 /* ipadIcon.png */; };
+		43D3062A1644A2A000AB2799 /* Math_Professors_List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43D306291644A2A000AB2799 /* Math_Professors_List.plist */; };
+		43D3062D1644A8B300AB2799 /* Math_Professors_Numbers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43D3062C1644A8B300AB2799 /* Math_Professors_Numbers.plist */; };
+		43D3062F1644AC7100AB2799 /* Math_Professors_Emails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43D3062E1644AC7100AB2799 /* Math_Professors_Emails.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43415FAC16444C850067943F /* N_1st.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_1st.h; path = PO/N_1st.h; sourceTree = SOURCE_ROOT; };
+		43415FAD16444C850067943F /* N_1st.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_1st.m; path = PO/N_1st.m; sourceTree = SOURCE_ROOT; };
+		43415FAE16444C850067943F /* N_4th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_4th.h; path = PO/N_4th.h; sourceTree = SOURCE_ROOT; };
+		43415FAF16444C850067943F /* N_4th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_4th.m; path = PO/N_4th.m; sourceTree = SOURCE_ROOT; };
+		43415FB016444C850067943F /* N_5th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_5th.h; path = PO/N_5th.h; sourceTree = SOURCE_ROOT; };
+		43415FB116444C850067943F /* N_5th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_5th.m; path = PO/N_5th.m; sourceTree = SOURCE_ROOT; };
+		43415FB216444C850067943F /* N_6th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_6th.h; path = PO/N_6th.h; sourceTree = SOURCE_ROOT; };
+		43415FB316444C850067943F /* N_6th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_6th.m; path = PO/N_6th.m; sourceTree = SOURCE_ROOT; };
+		43415FB416444C850067943F /* N_7th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_7th.h; path = PO/N_7th.h; sourceTree = SOURCE_ROOT; };
+		43415FB516444C850067943F /* N_7th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_7th.m; path = PO/N_7th.m; sourceTree = SOURCE_ROOT; };
+		43415FB616444C850067943F /* N_8th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_8th.h; path = PO/N_8th.h; sourceTree = SOURCE_ROOT; };
+		43415FB716444C850067943F /* N_8th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_8th.m; path = PO/N_8th.m; sourceTree = SOURCE_ROOT; };
+		43415FB816444C850067943F /* N_9th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_9th.h; path = PO/N_9th.h; sourceTree = SOURCE_ROOT; };
+		43415FB916444C850067943F /* N_9th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_9th.m; path = PO/N_9th.m; sourceTree = SOURCE_ROOT; };
+		43415FBA16444C850067943F /* N_10th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_10th.h; path = PO/N_10th.h; sourceTree = SOURCE_ROOT; };
+		43415FBB16444C850067943F /* N_10th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_10th.m; path = PO/N_10th.m; sourceTree = SOURCE_ROOT; };
+		43415FBC16444C850067943F /* N_11th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_11th.h; path = PO/N_11th.h; sourceTree = SOURCE_ROOT; };
+		43415FBD16444C850067943F /* N_11th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_11th.m; path = PO/N_11th.m; sourceTree = SOURCE_ROOT; };
+		43415FBE16444C850067943F /* N_12th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_12th.h; path = PO/N_12th.h; sourceTree = SOURCE_ROOT; };
+		43415FBF16444C850067943F /* N_12th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_12th.m; path = PO/N_12th.m; sourceTree = SOURCE_ROOT; };
+		43415FC116444CBE0067943F /* mathProfessorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mathProfessorsViewController.h; sourceTree = SOURCE_ROOT; };
+		43415FC216444CBE0067943F /* mathProfessorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mathProfessorsViewController.m; sourceTree = SOURCE_ROOT; };
 		4347C5AB163C9F6700978B14 /* cbp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cbp.png; sourceTree = "<group>"; };
 		4347C5AC163C9F6700978B14 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
 		4347C5AD163C9F6700978B14 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -172,26 +198,6 @@
 		4347C5F0163C9F6700978B14 /* mapsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapsVC.m; sourceTree = "<group>"; };
 		4347C5F1163C9F6700978B14 /* mopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mopViewController.h; sourceTree = "<group>"; };
 		4347C5F2163C9F6700978B14 /* mopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mopViewController.m; sourceTree = "<group>"; };
-		4347C5F3163C9F6700978B14 /* N_10th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = N_10th.h; sourceTree = "<group>"; };
-		4347C5F4163C9F6700978B14 /* N_10th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = N_10th.m; sourceTree = "<group>"; };
-		4347C5F5163C9F6700978B14 /* N_11th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = N_11th.h; sourceTree = "<group>"; };
-		4347C5F6163C9F6700978B14 /* N_11th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = N_11th.m; sourceTree = "<group>"; };
-		4347C5F7163C9F6700978B14 /* N_12th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = N_12th.h; sourceTree = "<group>"; };
-		4347C5F8163C9F6700978B14 /* N_12th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = N_12th.m; sourceTree = "<group>"; };
-		4347C5F9163C9F6700978B14 /* N_1st.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = N_1st.h; sourceTree = "<group>"; };
-		4347C5FA163C9F6700978B14 /* N_1st.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = N_1st.m; sourceTree = "<group>"; };
-		4347C5FB163C9F6700978B14 /* N_4th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = N_4th.h; sourceTree = "<group>"; };
-		4347C5FC163C9F6700978B14 /* N_4th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = N_4th.m; sourceTree = "<group>"; };
-		4347C5FD163C9F6700978B14 /* N_5th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = N_5th.h; sourceTree = "<group>"; };
-		4347C5FE163C9F6700978B14 /* N_5th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = N_5th.m; sourceTree = "<group>"; };
-		4347C5FF163C9F6700978B14 /* N_6th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = N_6th.h; sourceTree = "<group>"; };
-		4347C600163C9F6700978B14 /* N_6th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = N_6th.m; sourceTree = "<group>"; };
-		4347C601163C9F6700978B14 /* N_7th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = N_7th.h; sourceTree = "<group>"; };
-		4347C602163C9F6700978B14 /* N_7th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = N_7th.m; sourceTree = "<group>"; };
-		4347C603163C9F6700978B14 /* N_8th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = N_8th.h; sourceTree = "<group>"; };
-		4347C604163C9F6700978B14 /* N_8th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = N_8th.m; sourceTree = "<group>"; };
-		4347C605163C9F6700978B14 /* N_9th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = N_9th.h; sourceTree = "<group>"; };
-		4347C606163C9F6700978B14 /* N_9th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = N_9th.m; sourceTree = "<group>"; };
 		4347C608163C9F6700978B14 /* N_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = N_ViewController.h; sourceTree = "<group>"; };
 		4347C609163C9F6700978B14 /* N_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = N_ViewController.m; sourceTree = "<group>"; };
 		4347C60A163C9F6700978B14 /* NewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
@@ -266,6 +272,9 @@
 		43C146E1163CB1F2004EEEE5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		43C146E3163CB352004EEEE5 /* ipadIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipadIcon.png; sourceTree = "<group>"; };
 		43C146E5163CB489004EEEE5 /* POz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = POz.entitlements; sourceTree = "<group>"; };
+		43D306291644A2A000AB2799 /* Math_Professors_List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Math_Professors_List.plist; sourceTree = SOURCE_ROOT; };
+		43D3062C1644A8B300AB2799 /* Math_Professors_Numbers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Math_Professors_Numbers.plist; sourceTree = SOURCE_ROOT; };
+		43D3062E1644AC7100AB2799 /* Math_Professors_Emails.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Math_Professors_Emails.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,23 +297,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4347C5A2163C9F5000978B14 = {
+		43415FA616444C020067943F /* Icon & Images Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4347C5AB163C9F6700978B14 /* cbp.png */,
-				4347C748163CA40800978B14 /* KeychainWrapper.h */,
-				4347C749163CA40800978B14 /* KeychainWrapper.m */,
 				43C146E1163CB1F2004EEEE5 /* icon.png */,
 				4347C5AC163C9F6700978B14 /* cloud.png */,
 				4347C5AD163C9F6700978B14 /* Default-568h@2x.png */,
 				43C146E3163CB352004EEEE5 /* ipadIcon.png */,
 				4347C5AE163C9F6700978B14 /* Default.png */,
 				4347C5AF163C9F6700978B14 /* Default@2x.png */,
-				4347C5B0163C9F6700978B14 /* Device_Resolutions.h */,
-				4347C5B1163C9F6700978B14 /* FYI.rtf */,
 				4347C5B3163C9F6700978B14 /* Icon@2x.png */,
 				4347C5B6163C9F6700978B14 /* loginpic.png */,
 				4347C5B7163C9F6700978B14 /* loginpic@2x.png */,
+			);
+			name = "Icon & Images Resources";
+			sourceTree = "<group>";
+		};
+		4347C5A2163C9F5000978B14 = {
+			isa = PBXGroup;
+			children = (
+				4347C5AB163C9F6700978B14 /* cbp.png */,
+				4347C748163CA40800978B14 /* KeychainWrapper.h */,
+				4347C749163CA40800978B14 /* KeychainWrapper.m */,
+				43415FA616444C020067943F /* Icon & Images Resources */,
+				4347C5B0163C9F6700978B14 /* Device_Resolutions.h */,
+				4347C5B1163C9F6700978B14 /* FYI.rtf */,
 				4347C5B8163C9F6700978B14 /* PO */,
 				4347C62E163C9F6700978B14 /* PORepo */,
 				4347C62F163C9F6700978B14 /* POTests */,
@@ -375,26 +392,6 @@
 				4347C5F0163C9F6700978B14 /* mapsVC.m */,
 				4347C5F1163C9F6700978B14 /* mopViewController.h */,
 				4347C5F2163C9F6700978B14 /* mopViewController.m */,
-				4347C5F3163C9F6700978B14 /* N_10th.h */,
-				4347C5F4163C9F6700978B14 /* N_10th.m */,
-				4347C5F5163C9F6700978B14 /* N_11th.h */,
-				4347C5F6163C9F6700978B14 /* N_11th.m */,
-				4347C5F7163C9F6700978B14 /* N_12th.h */,
-				4347C5F8163C9F6700978B14 /* N_12th.m */,
-				4347C5F9163C9F6700978B14 /* N_1st.h */,
-				4347C5FA163C9F6700978B14 /* N_1st.m */,
-				4347C5FB163C9F6700978B14 /* N_4th.h */,
-				4347C5FC163C9F6700978B14 /* N_4th.m */,
-				4347C5FD163C9F6700978B14 /* N_5th.h */,
-				4347C5FE163C9F6700978B14 /* N_5th.m */,
-				4347C5FF163C9F6700978B14 /* N_6th.h */,
-				4347C600163C9F6700978B14 /* N_6th.m */,
-				4347C601163C9F6700978B14 /* N_7th.h */,
-				4347C602163C9F6700978B14 /* N_7th.m */,
-				4347C603163C9F6700978B14 /* N_8th.h */,
-				4347C604163C9F6700978B14 /* N_8th.m */,
-				4347C605163C9F6700978B14 /* N_9th.h */,
-				4347C606163C9F6700978B14 /* N_9th.m */,
 				4347C607163C9F6700978B14 /* N_Floors */,
 				4347C608163C9F6700978B14 /* N_ViewController.h */,
 				4347C609163C9F6700978B14 /* N_ViewController.m */,
@@ -447,6 +444,31 @@
 		4347C607163C9F6700978B14 /* N_Floors */ = {
 			isa = PBXGroup;
 			children = (
+				43D306291644A2A000AB2799 /* Math_Professors_List.plist */,
+				43D3062C1644A8B300AB2799 /* Math_Professors_Numbers.plist */,
+				43D3062E1644AC7100AB2799 /* Math_Professors_Emails.plist */,
+				43415FAC16444C850067943F /* N_1st.h */,
+				43415FAD16444C850067943F /* N_1st.m */,
+				43415FAE16444C850067943F /* N_4th.h */,
+				43415FAF16444C850067943F /* N_4th.m */,
+				43415FB016444C850067943F /* N_5th.h */,
+				43415FB116444C850067943F /* N_5th.m */,
+				43415FB216444C850067943F /* N_6th.h */,
+				43415FB316444C850067943F /* N_6th.m */,
+				43415FB416444C850067943F /* N_7th.h */,
+				43415FB516444C850067943F /* N_7th.m */,
+				43415FC116444CBE0067943F /* mathProfessorsViewController.h */,
+				43415FC216444CBE0067943F /* mathProfessorsViewController.m */,
+				43415FB616444C850067943F /* N_8th.h */,
+				43415FB716444C850067943F /* N_8th.m */,
+				43415FB816444C850067943F /* N_9th.h */,
+				43415FB916444C850067943F /* N_9th.m */,
+				43415FBA16444C850067943F /* N_10th.h */,
+				43415FBB16444C850067943F /* N_10th.m */,
+				43415FBC16444C850067943F /* N_11th.h */,
+				43415FBD16444C850067943F /* N_11th.m */,
+				43415FBE16444C850067943F /* N_12th.h */,
+				43415FBF16444C850067943F /* N_12th.m */,
 			);
 			path = N_Floors;
 			sourceTree = "<group>";
@@ -626,6 +648,9 @@
 				4347C73F163CA22800978B14 /* register@2x.png in Resources */,
 				43C146E2163CB1F2004EEEE5 /* icon.png in Resources */,
 				43C146E4163CB352004EEEE5 /* ipadIcon.png in Resources */,
+				43D3062A1644A2A000AB2799 /* Math_Professors_List.plist in Resources */,
+				43D3062D1644A8B300AB2799 /* Math_Professors_Numbers.plist in Resources */,
+				43D3062F1644AC7100AB2799 /* Math_Professors_Emails.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +661,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43415FC516444D490067943F /* N_1st.m in Sources */,
+				43415FC716444D490067943F /* N_4th.m in Sources */,
+				43415FC916444D490067943F /* N_5th.m in Sources */,
+				43415FCB16444D490067943F /* N_6th.m in Sources */,
+				43415FCD16444D490067943F /* N_7th.m in Sources */,
+				43415FD016444D490067943F /* N_8th.m in Sources */,
+				43415FD216444D490067943F /* N_9th.m in Sources */,
+				43415FD416444D490067943F /* N_10th.m in Sources */,
+				43415FD616444D490067943F /* N_11th.m in Sources */,
+				43415FD816444D490067943F /* N_12th.m in Sources */,
 				4347C74B163CA5AD00978B14 /* KeychainWrapper.m in Sources */,
 				4347C715163CA1D400978B14 /* testModel.xcdatamodeld in Sources */,
 				4347C6F2163CA1BF00978B14 /* A_BuildingViewController.m in Sources */,
@@ -651,16 +686,6 @@
 				4347C6FC163CA1BF00978B14 /* main.m in Sources */,
 				4347C6FD163CA1BF00978B14 /* mapsVC.m in Sources */,
 				4347C6FE163CA1BF00978B14 /* mopViewController.m in Sources */,
-				4347C6FF163CA1BF00978B14 /* N_10th.m in Sources */,
-				4347C700163CA1BF00978B14 /* N_11th.m in Sources */,
-				4347C701163CA1BF00978B14 /* N_12th.m in Sources */,
-				4347C702163CA1BF00978B14 /* N_1st.m in Sources */,
-				4347C703163CA1BF00978B14 /* N_4th.m in Sources */,
-				4347C704163CA1BF00978B14 /* N_5th.m in Sources */,
-				4347C705163CA1BF00978B14 /* N_6th.m in Sources */,
-				4347C706163CA1BF00978B14 /* N_7th.m in Sources */,
-				4347C707163CA1BF00978B14 /* N_8th.m in Sources */,
-				4347C708163CA1BF00978B14 /* N_9th.m in Sources */,
 				4347C709163CA1BF00978B14 /* N_ViewController.m in Sources */,
 				4347C70A163CA1BF00978B14 /* NewViewController.m in Sources */,
 				4347C70B163CA1BF00978B14 /* P_BuildingViewController.m in Sources */,
@@ -673,6 +698,7 @@
 				4347C712163CA1BF00978B14 /* theTable.m in Sources */,
 				4347C713163CA1BF00978B14 /* V_1st.m in Sources */,
 				4347C714163CA1BF00978B14 /* V_BuildingViewController.m in Sources */,
+				43415FC316444CBE0067943F /* mathProfessorsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,7 +809,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "POz/POz-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8FC5645D-F0B6-4C9C-8A83-22D9A731AF46";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8FC5645D-F0B6-4C9C-8A83-22D9A731AF46";
@@ -817,7 +843,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "POz/POz-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "8FC5645D-F0B6-4C9C-8A83-22D9A731AF46";
