@@ -30,17 +30,15 @@
     [super viewDidLoad];
 //    self.navigationController.navigationBarHidden = NO;
     self.navigationController.navigationBarHidden = NO;
-    NSString *CUNYPortal;
-    NSURLRequest *request;
-    NSURL *url;
+
     
-    webView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width
+    webViewz = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width
                                                        , self.view.frame.size.height)];
-    [webView setBackgroundColor:[UIColor whiteColor]];
-    [self.view addSubview:webView];
+    [webViewz setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:webViewz];
     
     
-    [self webPageLoadup:CUNYPortal :url :request];
+    [self webPageLoadup];
     [self activityIndicatorSetup];
 }
 
@@ -50,7 +48,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void) webPageLoadup:(NSString*) websitez:(NSURL*) theURLz:(NSURLRequest*) theRequest
+-(void) webPageLoadup
 {
     
  

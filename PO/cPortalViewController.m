@@ -28,23 +28,16 @@
     [super viewDidLoad];
     
     self.navigationController.navigationBarHidden = NO;
-   
-    NSString *CUNYPortal;
-    NSURLRequest *request;
-    NSURL *url;
-    
 
-    
-    [self webPageLoadup:CUNYPortal :url :request];
+    [self webPageLoadup];
     [self activityIndicatorSetup];
 
-	// Do any additional setup after loading the view.
 }
 
 
 
 
--(void) webPageLoadup:(NSString*) websitez:(NSURL*) theURLz:(NSURLRequest*) theRequest
+-(void) webPageLoadup
 {
     
    

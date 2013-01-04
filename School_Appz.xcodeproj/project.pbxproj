@@ -115,6 +115,8 @@
 		4389015A16967BFD00936C36 /* socialSciencePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389015916967BFD00936C36 /* socialSciencePageVC.m */; };
 		4389015D1697277700936C36 /* physicsProfessorsPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389015C1697277700936C36 /* physicsProfessorsPageViewController.m */; };
 		438901601697285A00936C36 /* physicsProfessorsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389015F1697285A00936C36 /* physicsProfessorsVC.m */; };
+		4389016316972E1700936C36 /* cstProfessorsPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389016216972E1700936C36 /* cstProfessorsPageViewController.m */; };
+		4389016616972F0200936C36 /* cstProfessorsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389016516972F0100936C36 /* cstProfessorsVC.m */; };
 		43A4DEAE1668728D0053C5DE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4347C652163CA01D00978B14 /* Default.png */; };
 		43A4DEB3166872B30053C5DE /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4DEB0166872B30053C5DE /* splashscreen.png */; };
 		43A4DEB4166872B30053C5DE /* splashscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4DEB1166872B30053C5DE /* splashscreen@2x.png */; };
@@ -334,6 +336,10 @@
 		4389015C1697277700936C36 /* physicsProfessorsPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = physicsProfessorsPageViewController.m; path = PO/physicsProfessorsPageViewController.m; sourceTree = SOURCE_ROOT; };
 		4389015E1697285900936C36 /* physicsProfessorsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = physicsProfessorsVC.h; sourceTree = SOURCE_ROOT; };
 		4389015F1697285A00936C36 /* physicsProfessorsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = physicsProfessorsVC.m; sourceTree = SOURCE_ROOT; };
+		4389016116972E1600936C36 /* cstProfessorsPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cstProfessorsPageViewController.h; path = PO/cstProfessorsPageViewController.h; sourceTree = SOURCE_ROOT; };
+		4389016216972E1700936C36 /* cstProfessorsPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cstProfessorsPageViewController.m; path = PO/cstProfessorsPageViewController.m; sourceTree = SOURCE_ROOT; };
+		4389016416972F0100936C36 /* cstProfessorsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cstProfessorsVC.h; sourceTree = SOURCE_ROOT; };
+		4389016516972F0100936C36 /* cstProfessorsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cstProfessorsVC.m; sourceTree = SOURCE_ROOT; };
 		43A4DEB0166872B30053C5DE /* splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen.png; sourceTree = "<group>"; };
 		43A4DEB1166872B30053C5DE /* splashscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splashscreen@2x.png"; sourceTree = "<group>"; };
 		43A4DEB5166872FF0053C5DE /* splashscreen-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splashscreen-568@2x.png"; sourceTree = "<group>"; };
@@ -573,6 +579,10 @@
 		4347C607163C9F6700978B14 /* N_Floors */ = {
 			isa = PBXGroup;
 			children = (
+				4389016116972E1600936C36 /* cstProfessorsPageViewController.h */,
+				4389016216972E1700936C36 /* cstProfessorsPageViewController.m */,
+				4389016416972F0100936C36 /* cstProfessorsVC.h */,
+				4389016516972F0100936C36 /* cstProfessorsVC.m */,
 				4389015E1697285900936C36 /* physicsProfessorsVC.h */,
 				4389015F1697285A00936C36 /* physicsProfessorsVC.m */,
 				4389015B1697277700936C36 /* physicsProfessorsPageViewController.h */,
@@ -935,6 +945,8 @@
 				4389015A16967BFD00936C36 /* socialSciencePageVC.m in Sources */,
 				4389015D1697277700936C36 /* physicsProfessorsPageViewController.m in Sources */,
 				438901601697285A00936C36 /* physicsProfessorsVC.m in Sources */,
+				4389016316972E1700936C36 /* cstProfessorsPageViewController.m in Sources */,
+				4389016616972F0200936C36 /* cstProfessorsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

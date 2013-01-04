@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class mathProfessorsViewController, physicsProfessorsPageViewController, CSTProfessorsViewController, buildingListViewController, socialScienveProfessorsViewController, math_ProfessorsViewController, newStudentFacultyViewController;
+@class mathProfessorsViewController, physicsProfessorsPageViewController, cstProfessorsPageViewController, buildingListViewController, socialScienveProfessorsViewController, math_ProfessorsViewController, newStudentFacultyViewController;
 
 @interface N_ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 

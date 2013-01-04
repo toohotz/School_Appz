@@ -9,7 +9,7 @@
 #import "N_ViewController.h"
 #import "mathProfessorsViewController.h"
 #import "physicsProfessorsPageViewController.h"
-#import "CSTProfessorsViewController.h"
+#import "cstProfessorsPageViewController.h"
 #import "socialScienveProfessorsViewController.h"
 #import "buildingListViewController.h"
 #import "newStudentFacultyViewController.h"
@@ -129,7 +129,7 @@
     
     newStudentFacultyViewController *newStudentFaculty = [[newStudentFacultyViewController alloc] init];
     physicsProfessorsPageViewController *physicsProfessors = [[physicsProfessorsPageViewController alloc] init];
-    CSTProfessorsViewController *cstProfessors = [[CSTProfessorsViewController alloc] init];
+    cstProfessorsPageViewController *cstProfessors = [[cstProfessorsPageViewController alloc] init];
     socialScienveProfessorsViewController *socialScienceProfessors = [[socialScienveProfessorsViewController alloc] init];
     math_ProfessorsViewController *mathProfessors = [[math_ProfessorsViewController alloc] init];
     
@@ -151,7 +151,7 @@
     }
     
     if (indexPath.row == 8) {
-        [self presentViewController:cstProfessors animated:YES completion:NULL];
+        [self.navigationController pushViewController:cstProfessors animated:YES];
     }
     
     

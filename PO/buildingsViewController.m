@@ -48,7 +48,7 @@
 
 }
 
-#warning navigation bar not showing on reloading of view
+
 -(void) viewDidAppear:(BOOL)animated
 {
     [self initialViewSetup];

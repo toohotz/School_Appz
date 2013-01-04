@@ -1,36 +1,42 @@
 //
-//  physicsProfessorsPageViewController.m
+//  cstProfessorsPageViewController.m
 //  School_Appz
 //
 //  Created by Jason on 1/4/13.
 //
 //
 
-#import "physicsProfessorsPageViewController.h"
-#import "physicsProfessorsVC.h"
+#import "cstProfessorsPageViewController.h"
+#import "cstProfessorsVC.h"
 
-#define BARJIS 0
-#define BLAKE 1
-#define BOUDANA 2
-#define BOYKO 3
-#define COHEN 4
-#define GELFAND 5
-#define GRACE 6
-#define KEZERASHVILI 7
-#define LUFENG 8
-#define MATLOFF 9
-#define MCKNIGHT 10
-#define MCLOUGHLIN 11
-#define MANGROO 12
-#define REMSEN 13
-#define TEWANI 14
-#define WISE 15
 
-@interface physicsProfessorsPageViewController ()
+#define ACCUMANNO_BRANKEY 0
+#define ARCHIBALD 1
+#define BELLEHSEN 2
+#define CABO 3
+#define CATON 4
+#define EBBERS 5
+#define GRAHAM 6
+#define GUIDONE 7
+#define HERNANDEZ 8
+#define HOLLEY 9
+#define LI 10
+#define LI_HONG 11
+#define MALYUTA 12
+#define MILNOAS 13
+#define OUDEJEHANE 14
+#define PINTO 15
+#define REYES 16
+#define RODNEY 17
+#define SHAHIDULLAH 18
+#define SIMMONS 19
+#define VIGLINA 20
+
+@interface cstProfessorsPageViewController ()
 
 @end
 
-@implementation physicsProfessorsPageViewController
+@implementation cstProfessorsPageViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -41,24 +47,19 @@
     return self;
 }
 
-
 -(void) professorsList
 {
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Physics_Professors_List" ofType:@"plist"];
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"CST_Professor_List" ofType:@"plist"];
     
     professors = [[NSArray alloc] initWithContentsOfFile:plistPath];
 }
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self professorsList];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -94,7 +95,6 @@
     
     NSString *name = [professors objectAtIndex:indexPath.row];
     cell.textLabel.text = name;
-
     
     return cell;
 }
@@ -116,7 +116,7 @@
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+    if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
@@ -138,6 +138,7 @@
 }
 */
 
+
 -(NSString*) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     NSString *sectionName = @"Select a professor";
@@ -149,76 +150,139 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // Navigation logic may go here. Create and push another view controller.
+    
+     cstProfessorsVC *detailViewController = [[cstProfessorsVC alloc] init];
 
-     physicsProfessorsVC *detailViewController = [[physicsProfessorsVC alloc] init];
+    if (indexPath.row == ACCUMANNO_BRANKEY) {
+        detailViewController.selection = ACCUMANNO_BRANKEY;
+        
+        
+    }
     
+    if (indexPath.row == ARCHIBALD)
+    {
+        detailViewController.selection = ARCHIBALD;
+        
+    }
+    
+    if (indexPath.row == BELLEHSEN)
+    {
+        detailViewController.selection = BELLEHSEN;
+        
+    }
+    
+    if (indexPath.row == CABO)
+    {
+        detailViewController.selection = CABO;
+        
+    }
+    
+    if (indexPath.row == CATON)
+    {
+        detailViewController.selection = CATON;
+        
+    }
+    
+    if (indexPath.row == EBBERS)
+    {
+        detailViewController.selection = EBBERS;
+        
+    }
+    
+    if (indexPath.row == GRAHAM)
+    {
+        detailViewController.selection = GRAHAM;
+        
+    }
+    
+    if (indexPath.row == GUIDONE)
+    {
+        detailViewController.selection = GUIDONE;
+        
+    }
+    
+    if (indexPath.row == HERNANDEZ)
+    {
+        detailViewController.selection = HERNANDEZ;
+        
+    }
+    
+    if (indexPath.row == HOLLEY)
+    {
+        detailViewController.selection = HOLLEY;
+        
+    }
+    
+    if (indexPath.row == LI)
+    {
+        detailViewController.selection = LI;
+        
+    }
+    
+    if (indexPath.row == LI_HONG)
+    {
+        detailViewController.selection = LI_HONG;
+        
+    }
+    
+    if (indexPath.row == MALYUTA)
+    {
+        detailViewController.selection = MALYUTA;
+        
+    }
+    
+    if (indexPath.row == MILNOAS)
+    {
+        detailViewController.selection = MILNOAS;
+        
+    }
+    
+    if (indexPath.row == OUDEJEHANE)
+    {
+        detailViewController.selection = OUDEJEHANE;
+        
+    }
+    
+    if (indexPath.row == PINTO)
+    {
+        detailViewController.selection = PINTO;
+        
+    }
+    
+    if (indexPath.row == REYES)
+    {
+        detailViewController.selection = REYES;
+        
+    }
+    
+    if (indexPath.row == RODNEY)
+    {
+        detailViewController.selection = RODNEY;
+        
+    }
+    
+    if (indexPath.row == SHAHIDULLAH)
+    {
+        detailViewController.selection = SHAHIDULLAH;
+        
+    }
+    
+    if (indexPath.row == SIMMONS)
+    {
+        detailViewController.selection = SIMMONS;
+        
+    }
+    
+    if (indexPath.row == VIGLINA)
+    {
+        detailViewController.selection = VIGLINA;
+        
+    }
+  
+    
+     [self.navigationController pushViewController:detailViewController animated:YES];
      
-    
-    if (indexPath.row == BARJIS) {
-        detailViewController.selection = BARJIS;
-    }
-    
-    if (indexPath.row == BLAKE) {
-        detailViewController.selection = BLAKE;
-    }
-    
-    if (indexPath.row == BOUDANA) {
-        detailViewController.selection = BOUDANA;
-    }
-    
-    if (indexPath.row == BOYKO) {
-        detailViewController.selection = BOYKO;
-    }
-    
-    if (indexPath.row == COHEN) {
-        detailViewController.selection = COHEN;
-    }
-    
-    if (indexPath.row == GELFAND) {
-        detailViewController.selection = GELFAND;
-    }
-    
-    if (indexPath.row == GRACE) {
-        detailViewController.selection = GRACE;
-    }
-    
-    if (indexPath.row == KEZERASHVILI) {
-        detailViewController.selection = KEZERASHVILI;
-    }
-    
-    if (indexPath.row == LUFENG) {
-        detailViewController.selection = LUFENG;
-    }
-    
-    if (indexPath.row == MATLOFF) {
-        detailViewController.selection = MATLOFF;
-    }
-    
-    if (indexPath.row == MCKNIGHT) {
-        detailViewController.selection = MCKNIGHT;
-    }
-    
-    if (indexPath.row == MCLOUGHLIN) {
-        detailViewController.selection = MCLOUGHLIN;
-    }
-    
-    if (indexPath.row == MANGROO) {
-        detailViewController.selection = MANGROO;
-    }
-    
-    if (indexPath.row == REMSEN) {
-        detailViewController.selection = REMSEN;
-    }
-    
-    if (indexPath.row == TEWANI) {
-        detailViewController.selection = TEWANI;
-    }
-    
-    if (indexPath.row == WISE) {
-        detailViewController.selection = WISE;
-    }
-    
-    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 @end

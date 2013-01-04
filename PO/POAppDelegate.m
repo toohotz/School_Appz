@@ -277,8 +277,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    NSDate *alertTime = [[NSDate date] dateByAddingTimeInterval:10];
-    UIApplication *app = [UIApplication sharedApplication];
+  
     UILocalNotification *alarm = [[UILocalNotification alloc] init];
     NSDateFormatter *dateForm = [[NSDateFormatter alloc] init];
     [dateForm setDateStyle:NSDateFormatterShortStyle];

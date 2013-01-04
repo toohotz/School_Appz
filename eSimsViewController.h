@@ -11,6 +11,6 @@
 @interface eSimsViewController : UIViewController <UIWebViewDelegate>
 {
     UIWebView *theWebView;
-    UIView *webView;
+    UIView *webViewz;
 }
 @end
