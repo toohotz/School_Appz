@@ -8,6 +8,10 @@
 
 #import "initialVC.h"
 #import "Device_Resolutions.h"
+#import "buildingListViewController.h"
+#import "cPortalViewController.h"
+#import "CalendarVC.h"
+#import "eSimsViewController.h"
 
 
 NSString * const TEST_NOTIF =  @"Test notification Complete.";
@@ -174,6 +178,68 @@ NSString * const TEST_NOTIF =  @"Test notification Complete.";
     
 }
 
+#warning try to use GCD todo fadein and fadeout 
+
+-(void) fadeIn
+{
+    
+
+        backgroundView = [[UIView alloc] init];
+        backgroundView.frame = self.view.frame;
+        [self.view addSubview:backgroundView];
+        [self.view sendSubviewToBack:backgroundView];
+        
+        UIImage *theLogo = [UIImage imageNamed:@"cunylogofull.png"];
+        UIImage *scaledLogo = [UIImage imageWithCGImage:[theLogo CGImage] scale:2.8 orientation:UIImageOrientationUp];
+        
+        
+        backgroundImage = [[UIImageView alloc] initWithImage:scaledLogo];
+        backgroundImage.alpha = 0.0;
+        backgroundImage.center = self.view.center;
+        [backgroundView addSubview:backgroundImage];
+ 
+  
+        [UIView beginAnimations:@"fade in" context:nil];
+        [UIView setAnimationDuration:1.8];
+        [UIView setAnimationRepeatCount:1e100f];
+        backgroundImage.alpha = 2.5;
+        [UIView commitAnimations];
+        //    [backgroundImage removeFromSuperview];
+    
+
+    
+    
+
+}
+
+
+-(void) fadeOut
+{
+
+    
+    
+        
+        backgroundView = [[UIView alloc] init];
+        backgroundView.frame = self.view.frame;
+        [self.view addSubview:backgroundView];
+        [self.view sendSubviewToBack:backgroundView];
+        
+        UIImage *theLogo = [UIImage imageNamed:@"cunylogofull.png"];
+        UIImage *scaledLogo = [UIImage imageWithCGImage:[theLogo CGImage] scale:2.8 orientation:UIImageOrientationUp];
+        backgroundImage = [[UIImageView alloc] initWithImage:scaledLogo];
+        backgroundImage.alpha = 1.0;
+        backgroundImage.center = self.view.center;
+        [backgroundView addSubview:backgroundImage];
+
+    
+    [UIView beginAnimations:@"fade out" context:nil];
+    [UIView setAnimationDuration:1.8];
+    [UIView setAnimationRepeatCount:1e100f];
+    backgroundImage.alpha = 0.0;
+    [UIView commitAnimations];
+}
+
+
 -(void) backGroundFadesIn
 {
  
@@ -204,15 +270,28 @@ NSString * const TEST_NOTIF =  @"Test notification Complete.";
                [imageView startAnimating];
                
                [self.view addSubview:imageView];
+               
            });
        }
        
    });
-//    dispatch_release(backgroundFadesInQueue);
+    dispatch_release(backgroundFadesInQueue);
     
     timer = [NSTimer scheduledTimerWithTimeInterval:2.7 target:self selector:@selector(timerTestMethod:) userInfo:nil repeats:NO];
     
+    UILocalNotification *myNotif = [[UILocalNotification alloc] init];
 
+    
+    NSDate *launchDate = [[NSDate alloc] initWithTimeIntervalSinceNow:6];
+    myNotif.fireDate = launchDate;
+    
+    myNotif.timeZone = [NSTimeZone defaultTimeZone];
+    myNotif.alertBody = @"This is my local notifaction 30 zeconds later";
+    myNotif.alertAction = @"Congrats!";
+    myNotif.soundName = UILocalNotificationDefaultSoundName;
+    myNotif.applicationIconBadgeNumber = 1;
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:myNotif];
 }
 
 
@@ -222,8 +301,61 @@ NSString * const TEST_NOTIF =  @"Test notification Complete.";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self fadeIn];
+//    [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(fadeOut) userInfo:nil repeats:NO];
 
-    [self fadingAnimation];
+    [self fadeOut];
+    
+    
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
+        if ([UIScreen mainScreen].scale == 2.0f) {
+            CGSize result = [[UIScreen mainScreen] bounds].size;
+            CGFloat scale = [UIScreen mainScreen].scale;
+            result = CGSizeMake(result.width * scale, result.height * scale);
+            
+            if(result.height == 960){
+                
+                //                iPhone 4/4S
+                UIImageView *bgImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Home+Screen@2x.png"]];
+                bgImage.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+                
+                [[self view] addSubview:bgImage];
+                [[self view] sendSubviewToBack:bgImage];
+            }
+            if(result.height == 1136){
+                
+                //                iPhone 5
+                UIImageView *bgImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Home+Screen-568@2x.png"]];
+                bgImage.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+                
+                [[self view] addSubview:bgImage];
+                [[self view] sendSubviewToBack:bgImage];
+                
+            }
+        } else {
+            
+            //            non Retina iPhone
+            UIImageView *bgImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Home+Screen.png"]];
+            bgImage.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+            
+            [[self view] addSubview:bgImage];
+            [[self view] sendSubviewToBack:bgImage];
+        }
+    } else {
+        if ([UIScreen mainScreen].scale == 2.0f) {
+            
+            //            iPad Retina
+            // no iPad needed
+            
+        } else{
+            // iPad non Retina
+            // no iPad needed
+        }
+    }
+    
+    
+//    [self fadingAnimation];
 
     
 //    [self playAudio];
@@ -244,20 +376,84 @@ NSString * const TEST_NOTIF =  @"Test notification Complete.";
     self.title = @"My CUNY";
     
     self.navigationController.navigationBarHidden = YES;
-    
-    
-    
+
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveTestNotification:) name:TEST_NOTIF object:nil];
     
     
+    
+    [self.view setNeedsDisplay];
+    [self.view setNeedsLayout];
+    
 }
+
+-(void) buttonResetup
+{
+    calendarButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [calendarButton setBackgroundImage:[UIImage imageNamed:@"Planner+Non-Selected.png"] forState:UIControlStateNormal];
+    [calendarButton setBackgroundImage:[UIImage imageNamed:@"Planner+Selected.png"] forState:UIControlStateHighlighted];
+    buildingVCButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [buildingVCButton setBackgroundImage:[UIImage imageNamed:@"Proff+Non-Selected.png"] forState:UIControlStateNormal];
+    [buildingVCButton setBackgroundImage:[UIImage imageNamed:@"Proff+Selected.png"] forState:UIControlStateHighlighted];
+          
+    mapButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [mapButton setBackgroundImage:[UIImage imageNamed:@"eSims+Non-Selected.png"] forState:UIControlStateNormal];
+    [mapButton setBackgroundImage:[UIImage imageNamed:@"eSims+Selected.png"] forState:UIControlStateHighlighted];
+    
+    calendarButton.frame = CGRectMake(111, 416, 99, 44);
+    buildingVCButton.frame = CGRectMake(-5, 416, 118, 44);
+    mapButton.frame = CGRectMake(204, 416, 116, 44);
+    
+    [calendarButton addTarget:self action:@selector(goToCalendar) forControlEvents:UIControlEventTouchDown];
+    [buildingVCButton addTarget:self action:@selector(goToBuildings) forControlEvents:UIControlEventTouchDown];
+    [mapButton addTarget:self action:@selector(goToCPortal) forControlEvents:UIControlEventTouchDown];
+    
+    
+    /*
+    [self.view addSubview:calendarButton];
+    [self.view addSubview:buildingVCButton];
+    [self.view addSubview:mapButton];
+     */
+}
+
 
 - (void) receiveTestNotification:(NSNotification *) notification
 {
     NSLog(@"Notification received");
     
 }
+
+
+#pragma mark - View navigation pushing (buttons)
+
+-(void) goToCPortal
+{
+    cPortalViewController *cunyportalVC = [[cPortalViewController alloc] init];
+
+    eSimsViewController *esimsVC = [[eSimsViewController alloc] init];
+//    [self.navigationController pushViewController:cunyportalVC animated:YES];
+    [self.navigationController pushViewController:esimsVC animated:YES];
+//    [self.view removeFromSuperview];
+
+    
+}
+
+-(void) goToCalendar
+{
+    CalendarVC *calendarVC = [[CalendarVC alloc] init];
+    [self.navigationController pushViewController:calendarVC animated:YES];
+        [self.view removeFromSuperview];
+
+}
+
+-(void) goToBuildings
+{
+    buildingListViewController *buildingListVC = [[buildingListViewController alloc] init];
+    [self.navigationController pushViewController:buildingListVC animated:YES];
+
+//        [self.view removeFromSuperview];
+}
+
 
 
 
@@ -307,17 +503,24 @@ NSString * const TEST_NOTIF =  @"Test notification Complete.";
 
 #pragma mark - View loading
 
+
+#warning The animation is not being cleared properly on new screen
 -(void) viewWillAppear:(BOOL)animated
 {
 
+        
     
-    
-    
-    self.navigationController.navigationBarHidden = YES;
-    [self cloudAnimation];
+    [self viewDidLoad];
+
+//    [self cloudAnimation];
     [self.view setNeedsDisplay];
     [self.view setNeedsLayout];
-
+    [self buttonResetup];
+    
+    /*
+    [self fadeIn];
+    [self fadeOut];
+*/
 }
 
 - (void)didReceiveMemoryWarning

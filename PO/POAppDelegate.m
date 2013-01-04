@@ -54,6 +54,34 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:TEST_NOTIF object:nil];
     
     
+    NSString *newDateString = @"11-28-2012 11:13";
+    
+    UILocalNotification *globalNote = [[UILocalNotification alloc]init];
+    NSDate *testDate = [NSDate date];
+    NSDateFormatter *dateForm = [[NSDateFormatter alloc] init];
+    [dateForm setDateFormat:@"MM-dd-yyyy hh:mm a"];
+    
+    NSDate *newDate = [dateForm dateFromString:newDateString];
+    NSString *dateString = [dateForm stringFromDate:testDate];
+    NSString *newDateStringz = [dateForm stringFromDate:newDate];
+    NSLog(@"The date formatted is: %@", dateString);
+    NSLog(@"The new date is to be: %@", newDateStringz);
+    
+    
+    
+    
+    
+    
+//    globalNote.fireDate = goDate;
+    globalNote.fireDate = newDate;
+    
+//    globalNote.timeZone = [NSTimeZone systemTimeZone];
+    globalNote.alertBody = @"This is my other notification";
+    globalNote.alertAction = @"Congrats!";
+    globalNote.soundName = UILocalNotificationDefaultSoundName;
+
+    
+//    [[UIApplication sharedApplication] scheduleLocalNotification:globalNote];
     
     return YES;
 }
@@ -252,15 +280,25 @@
     NSDate *alertTime = [[NSDate date] dateByAddingTimeInterval:10];
     UIApplication *app = [UIApplication sharedApplication];
     UILocalNotification *alarm = [[UILocalNotification alloc] init];
+    NSDateFormatter *dateForm = [[NSDateFormatter alloc] init];
+    [dateForm setDateStyle:NSDateFormatterShortStyle];
+    [dateForm setTimeStyle:NSDateFormatterShortStyle];
+    [dateForm setDateFormat:@"h:mm a"];
+    NSString *datez = @"3:06 am";
+    NSDate *goDate = [[NSDate alloc] init];
+    goDate = [dateForm dateFromString:datez];
     
-    if (alarm) {
+    
+    
             
-        alarm.fireDate = alertTime;
+        alarm.fireDate = goDate;
         alarm.timeZone = [NSTimeZone defaultTimeZone];
         alarm.repeatInterval = 0;
-        alarm.alertBody = @"This is a test notification";
-        [app scheduleLocalNotification:alarm];
-    }
+        alarm.alertBody = @"This is a new test notification";
+    
+    NSLog(@"The used date is: %@", goDate);
+//        [app scheduleLocalNotification:alarm];
+    
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

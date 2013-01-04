@@ -28,19 +28,31 @@
     [super viewDidLoad];
     
     self.navigationController.navigationBarHidden = NO;
-    
-    NSString *google;
+   
+    NSString *CUNYPortal;
     NSURLRequest *request;
     NSURL *url;
-    [self webPageLoadup:google :url :request];
+    
+
+    
+    [self webPageLoadup:CUNYPortal :url :request];
+    [self activityIndicatorSetup];
+
 	// Do any additional setup after loading the view.
 }
 
 
 
 
--(void) webPageLoadup:(NSString*) website:(NSURL*) theURL:(NSURLRequest*) theRequest
+-(void) webPageLoadup:(NSString*) websitez:(NSURL*) theURLz:(NSURLRequest*) theRequest
 {
+    
+   
+    
+//    needed to set delegate to self to use delegate methods
+    
+    theWebView.delegate = self;
+    
     dispatch_queue_t bgLoadingQueue = dispatch_queue_create("com.apple.PO.MyQueue", NULL);
 
     dispatch_async(bgLoadingQueue, ^{
@@ -52,8 +64,26 @@
         [theWebView loadRequest:theRequest];
     });
     
-//    dispatch_release(bgLoadingQueue);
+    dispatch_release(bgLoadingQueue);
     
+}
+
+-(void) activityIndicatorSetup
+{
+    [UIApplication sharedApplication]. networkActivityIndicatorVisible = YES;
+
+    
+}
+
+-(void) webViewDidFinishLoad:(UIWebView *)webView
+{
+    if (webView.loading == NO) {
+
+//        used shared app network indication for status bar progress loading
+        [UIApplication sharedApplication]. networkActivityIndicatorVisible = NO;
+    }
+    webView = theWebView;
+
 }
 
 - (void)didReceiveMemoryWarning

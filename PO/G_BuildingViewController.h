@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class buildingsViewController;
+@class buildingListViewController, AdvertisingGraphicsDesignViewController, COPEViewController;
 
 
 @interface G_BuildingViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>

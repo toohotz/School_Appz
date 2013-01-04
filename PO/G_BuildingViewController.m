@@ -7,7 +7,9 @@
 //
 
 #import "G_BuildingViewController.h"
-#import "buildingsViewController.h"
+#import "buildingListViewController.h"
+#import "AdvertisingGraphicsDesignViewController.h"
+#import "COPEViewController.h"
 
 
 @interface G_BuildingViewController ()
@@ -20,12 +22,12 @@
 
 - (void)viewDidLoad
 {
+
     [super viewDidLoad];
     
     [self initialViewSetup];
     
-    [self navBarSetup];
-    
+   
     [self initTableView];
 
 }
@@ -46,28 +48,10 @@
     
     contentView.backgroundColor = [UIColor clearColor];
     [self setView:contentView];
-    G_floors = [[NSArray alloc] initWithObjects:@"1st Floor", @"2nd Floor", @"3rd Floor", @" 4th Floor", @"5th Floor", @"6th Floor", @"7th Floor", @"8th Floor", nil];
+    G_floors = [[NSArray alloc] initWithObjects:@"1st Floor", @"2nd Floor", @"3rd Floor", @"4th Floor", @"5th Floor", @"6th Floor", @"7th Floor", @"8th Floor", nil];
 }
 
-#pragma mark - Navbar Setup
 
--(void) navBarSetup
-{
-    UINavigationBar *navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(self.view.bounds.origin.x , self.view.bounds.origin.y, 320, 44)];
-    
-    
-    
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"<- Back" style:UIBarButtonItemStylePlain target:nil action:@selector(backButton)];
-    //    navcontroller.navigationItem.leftBarButtonItem = backButton;
-    UINavigationItem *bzButton = [[UINavigationItem alloc] init];
-    
-    bzButton.leftBarButtonItem = backButton;
-    [navBar pushNavigationItem:bzButton animated:NO];
-    
-    
-    
-    [self.view addSubview:navBar];
-}
 
 #pragma mark - Tableview stuff
 
@@ -88,9 +72,8 @@
 #pragma mark - Custom Back Button
 -(void) backButton
 {
-    buildingsViewController *buildingsView = [[buildingsViewController alloc] init];
-    
-    [self presentViewController:buildingsView animated:YES completion:NULL];
+    buildingListViewController *buildingsVC = [[buildingListViewController alloc] init];
+    [self presentViewController:buildingsVC animated:YES completion:NULL];
 }
 
 
@@ -174,13 +157,22 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    AdvertisingGraphicsDesignViewController *advertisingGraphicsProfessors = [[AdvertisingGraphicsDesignViewController alloc] init];
+    COPEViewController *COPE_People = [[COPEViewController alloc] init];
+    
+    
+    if (indexPath.row == 3 ) {
+        
+        NSLog(@"Advertising floor selected");
+        [self presentViewController:advertisingGraphicsProfessors animated:YES completion:NULL];
+    }
+    
+    if (indexPath.row == 4) {
+        [self presentViewController:COPE_People animated:YES completion:NULL];
+    }
+    
+    
+    
 }
 
 @end

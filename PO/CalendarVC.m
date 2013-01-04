@@ -31,11 +31,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    webView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width
+                                                       , self.view.bounds.size.height)];
+    [webView setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:webView];
+    
     [self backgroundSetup];
-     
+    
 
     
     self.navigationController.navigationBarHidden = NO;
+    
+    [webView addSubview:calendarWebView];
     
 	// Do any additional setup after loading the view.
 }
@@ -59,6 +67,8 @@
 
 -(void) backgroundSetup
 {
+
+    
 website = @"http://calendar.citytech.cuny.edu/ADCalendar/EventList.aspx?fromdate=8/25/2012&todate=9/23/2012&view=Summary";
     
     url = [NSURL URLWithString:website];
@@ -67,6 +77,7 @@ website = @"http://calendar.citytech.cuny.edu/ADCalendar/EventList.aspx?fromdate
     
       request = [NSURLRequest requestWithURL:url];
         [calendarWebView loadRequest:request];
+    
 
     
 //    release of the queue

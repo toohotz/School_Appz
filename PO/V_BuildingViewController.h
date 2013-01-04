@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class buildingsViewController;
+@class buildingListViewController, constructionCivilEngineeringViewController, emt_cetProfessorsViewController;
 
 
 @interface V_BuildingViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>

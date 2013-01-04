@@ -10,18 +10,20 @@
 #import <QuartzCore/QuartzCore.h>
 #import <AVFoundation/AVFoundation.h>
 
-
+@class buildingListViewController, cPortalViewController, CalendarVC, eSimsViewController;
 
 
 @interface initialVC : UIViewController 
 {
     IBOutlet UIButton *calendarButton;
     
+    IBOutlet UIButton *buildingVCButton;
     
     IBOutlet UIButton *mapButton;
     
-    
+    UIView *backgroundView;
     UIImageView *imageView;
+    UIImageView *backgroundImage;
     UIImage *cloudImage;
     CALayer *cloud;
     CGPoint startPoint, endPoint;

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class buildingsViewController;
+@class buildingListViewController;
 
 
 @interface P_BuildingViewController : UIViewController  <UITableViewDataSource, UITableViewDelegate>

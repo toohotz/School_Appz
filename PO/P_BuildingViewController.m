@@ -7,7 +7,7 @@
 //
 
 #import "P_BuildingViewController.h"
-#import "buildingsViewController.h"
+#import "buildingListViewController.h"
 
 @interface P_BuildingViewController ()
 
@@ -19,11 +19,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.navigationController.navigationBarHidden = NO;
     [self initialViewSetup];
     
-    [self navBarSetup];
-    
+   
     [self initTableView];
     
 }
@@ -44,29 +43,15 @@
     contentView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
     
     contentView.backgroundColor = [UIColor clearColor];
-    [self setView:contentView];
-    P_floors = [[NSArray alloc] initWithObjects:@"1st Floor", @"2nd Floor", @"3rd Floor", @" 4th Floor", @"5th Floor", @"6th Floor", nil];
+//    [self setView:contentView];
+//    [self.view addSubview:contentView];
+    
+  
 }
 
 #pragma mark - Navbar Setup
 
--(void) navBarSetup
-{
-    UINavigationBar *navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(self.view.bounds.origin.x , self.view.bounds.origin.y, 320, 44)];
-    
-    
-    
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"<- Back" style:UIBarButtonItemStylePlain target:nil action:@selector(backButton)];
-    //    navcontroller.navigationItem.leftBarButtonItem = backButton;
-    UINavigationItem *bzButton = [[UINavigationItem alloc] init];
-    
-    bzButton.leftBarButtonItem = backButton;
-    [navBar pushNavigationItem:bzButton animated:NO];
-    
-    
-    
-    [self.view addSubview:navBar];
-}
+
 
 #pragma mark - Tableview stuff
 
@@ -74,11 +59,12 @@
 {
     //    ***** WORKING PART ****** //
     //    0,416,174,375
-    tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 45, 174, 375) style:UITableViewStylePlain];
+    tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.view.bounds.origin.y, 174, 375) style:UITableViewStylePlain];
     
     tableView.dataSource = self;
     tableView.delegate = self;
     [self.view addSubview:tableView];
+      P_floors = [[NSArray alloc] initWithObjects:@"1st Floor", @"2nd Floor", @"3rd Floor", @"4th Floor", @"5th Floor", @"6th Floor", nil];
     
     //    ***** WORKING PART ****** //
 }
@@ -86,9 +72,8 @@
 #pragma mark - Custom Back Button
 -(void) backButton
 {
-    buildingsViewController *buildingsView = [[buildingsViewController alloc] init];
-    
-    [self presentViewController:buildingsView animated:YES completion:NULL];
+    buildingListViewController *buildingsVC = [[buildingListViewController alloc] init];
+    [self presentViewController:buildingsVC animated:YES completion:NULL];
 }
 
 

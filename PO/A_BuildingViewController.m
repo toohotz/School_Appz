@@ -7,7 +7,7 @@
 // NOT SURE ABOUT NUMBER OF FLOORS IN ATRIUM MUST CHECK
 
 #import "A_BuildingViewController.h"
-#import "buildingsViewController.h"
+#import "buildingListViewController.h"
 
 @interface A_BuildingViewController ()
 
@@ -23,8 +23,7 @@
     [super viewDidLoad];
     [self initialViewSetup];
     
-    [self navBarSetup];
-    
+   
     [self initTableView];
     
 }
@@ -42,31 +41,12 @@
     UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
     contentView.autoresizesSubviews = YES;
     contentView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
-    A_floors= [[NSArray alloc] initWithObjects:@"1st Floor", @"2nd Floor", @"3rd Floor", @" 4th Floor", @"5th Floor", @"6th Floor", @"7th Floor", @"8th Floor", nil];
+    A_floors= [[NSArray alloc] initWithObjects:@"1st Floor", @"2nd Floor", @"3rd Floor", @"4th Floor", @"5th Floor", @"6th Floor", @"7th Floor", @"8th Floor", nil];
     contentView.backgroundColor = [UIColor clearColor];
     [self setView:contentView];
     
 }
 
-#pragma mark - Navbar Setup
-
--(void) navBarSetup
-{
-    UINavigationBar *navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(self.view.bounds.origin.x , self.view.bounds.origin.y, 320, 44)];
-    
-    
-    
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"<- Back" style:UIBarButtonItemStylePlain target:nil action:@selector(backButton)];
-    //    navcontroller.navigationItem.leftBarButtonItem = backButton;
-    UINavigationItem *bzButton = [[UINavigationItem alloc] init];
-    
-    bzButton.leftBarButtonItem = backButton;
-    [navBar pushNavigationItem:bzButton animated:NO];
-    
-    
-    
-    [self.view addSubview:navBar];
-}
 
 #pragma mark - Tableview stuff
 
@@ -86,9 +66,8 @@
 #pragma mark - Custom Back Button
 -(void) backButton
 {
-    buildingsViewController *buildingsView = [[buildingsViewController alloc] init];
-    
-    [self presentViewController:buildingsView animated:YES completion:NULL];
+    buildingListViewController *buildingsVC = [[buildingListViewController alloc] init];
+    [self presentViewController:buildingsVC animated:YES completion:NULL];
 }
 
 

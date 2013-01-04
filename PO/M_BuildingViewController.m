@@ -7,7 +7,7 @@
 //
 
 #import "M_BuildingViewController.h"
-#import "buildingsViewController.h"
+#import "buildingListViewController.h"
 
 @interface M_BuildingViewController ()
 
@@ -23,7 +23,6 @@
 
     [self initialViewSetup];
     
-    [self navBarSetup];
     
     [self initTableView];
     
@@ -67,25 +66,6 @@
     
 }
 
-#pragma mark - Navbar Setup
-
--(void) navBarSetup
-{
-    UINavigationBar *navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(self.view.bounds.origin.x , self.view.bounds.origin.y, 320, 44)];
-    
-    
-    
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"<- Back" style:UIBarButtonItemStylePlain target:nil action:@selector(backButton)];
-    //    navcontroller.navigationItem.leftBarButtonItem = backButton;
-    UINavigationItem *bzButton = [[UINavigationItem alloc] init];
-    
-    bzButton.leftBarButtonItem = backButton;
-    [navBar pushNavigationItem:bzButton animated:NO];
-    
-    
-    
-    [self.view addSubview:navBar];
-}
 
 #pragma mark - Tableview stuff
 
@@ -105,10 +85,8 @@
 #pragma mark - Custom Back Button
 -(void) backButton
 {
-    buildingsViewController *buildingsView = [[buildingsViewController alloc] init];
-    
-    [self presentViewController:buildingsView animated:YES completion:NULL];
-}
+    buildingListViewController *buildingsVC = [[buildingListViewController alloc] init];
+    [self presentViewController:buildingsVC animated:YES completion:NULL];}
 
 
 #pragma mark - Table view data source

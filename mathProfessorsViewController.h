@@ -10,13 +10,23 @@
 
 @class N_ViewController;
 
-@interface mathProfessorsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface mathProfessorsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate>
 {
     UITableView *tableView;
     NSArray *professors;
     UIView *professorPage;
+    NSMutableArray* allTableData;
+    NSMutableArray* filteredTableData;
+    UISearchDisplayController *searchDisplay;
     
+    NSString *searchedText;
+    
+
 }
 
+@property (strong, nonatomic) NSMutableArray* allTableData;
+@property (strong, nonatomic) NSMutableArray* filteredTableData; 
+@property (nonatomic, assign) bool isFiltered;
+@property(nonatomic, retain) UISearchDisplayController *searchDisplay;
 
 @end

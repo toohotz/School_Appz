@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface cPortalViewController : UIViewController
+@interface cPortalViewController : UIViewController <UIWebViewDelegate>
 {
     
     IBOutlet UIWebView *theWebView;
+    UIView *webView;
+
 }
 @end

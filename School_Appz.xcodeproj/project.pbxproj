@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4322DF0016474F0800BD1BB6 /* socialScienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4322DEFF16474F0800BD1BB6 /* socialScienceViewController.m */; };
+		4322DF0316474F3100BD1BB6 /* socialScience_Professors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4322DF0216474F3100BD1BB6 /* socialScience_Professors.plist */; };
+		4322DF0516474F3C00BD1BB6 /* socialScience_Numbers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4322DF0416474F3C00BD1BB6 /* socialScience_Numbers.plist */; };
+		4322DF0716474F4E00BD1BB6 /* socialScience_Emails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4322DF0616474F4D00BD1BB6 /* socialScience_Emails.plist */; };
+		433C5C25164D642C0050602D /* dentalProfessorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 433C5C24164D642C0050602D /* dentalProfessorsViewController.m */; };
 		43415FC316444CBE0067943F /* mathProfessorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FC216444CBE0067943F /* mathProfessorsViewController.m */; };
-		43415FC516444D490067943F /* N_1st.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FAD16444C850067943F /* N_1st.m */; };
-		43415FC716444D490067943F /* N_4th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FAF16444C850067943F /* N_4th.m */; };
-		43415FC916444D490067943F /* N_5th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FB116444C850067943F /* N_5th.m */; };
-		43415FCB16444D490067943F /* N_6th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FB316444C850067943F /* N_6th.m */; };
-		43415FCD16444D490067943F /* N_7th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FB516444C850067943F /* N_7th.m */; };
-		43415FD016444D490067943F /* N_8th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FB716444C850067943F /* N_8th.m */; };
-		43415FD216444D490067943F /* N_9th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FB916444C850067943F /* N_9th.m */; };
-		43415FD416444D490067943F /* N_10th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FBB16444C850067943F /* N_10th.m */; };
-		43415FD616444D490067943F /* N_11th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FBD16444C850067943F /* N_11th.m */; };
-		43415FD816444D490067943F /* N_12th.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FBF16444C850067943F /* N_12th.m */; };
+		4343231816554C02003795FE /* constructionCivilEngineeringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4343231716554C02003795FE /* constructionCivilEngineeringViewController.m */; };
+		4343231B16554C1E003795FE /* constructionCivilEngineering_List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4343231A16554C1E003795FE /* constructionCivilEngineering_List.plist */; };
+		4343231D16554C26003795FE /* constructionCivilEngineering_Numbers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4343231C16554C26003795FE /* constructionCivilEngineering_Numbers.plist */; };
+		4343231F16554C2C003795FE /* constructionCivilEngineering_Emails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4343231E16554C2C003795FE /* constructionCivilEngineering_Emails.plist */; };
 		4347C668163CA09200978B14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4347C667163CA09200978B14 /* UIKit.framework */; };
 		4347C66A163CA09800978B14 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4347C669163CA09800978B14 /* Security.framework */; };
 		4347C66C163CA09F00978B14 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4347C66B163CA09F00978B14 /* MapKit.framework */; };
@@ -104,36 +103,79 @@
 		4347C747163CA27500978B14 /* Queens_College_Campus(iPhone)@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4347C617163C9F6700978B14 /* Queens_College_Campus(iPhone)@2x.jpg */; };
 		4347C74A163CA41600978B14 /* KeychainWrapper.m in Resources */ = {isa = PBXBuildFile; fileRef = 4347C749163CA40800978B14 /* KeychainWrapper.m */; };
 		4347C74B163CA5AD00978B14 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C749163CA40800978B14 /* KeychainWrapper.m */; };
+		435D93B21657456200E891A0 /* EMT_CET_List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 435D93B11657456200E891A0 /* EMT_CET_List.plist */; };
+		435D93B51657456D00E891A0 /* EMT_CET_Emails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 435D93B41657456D00E891A0 /* EMT_CET_Emails.plist */; };
+		435D93B7165745AC00E891A0 /* EMT_CET_Numbers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 435D93B6165745AC00E891A0 /* EMT_CET_Numbers.plist */; };
+		436504AC164F5DFF009E9D95 /* AdvertisingGraphicsDesignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 436504AB164F5DFF009E9D95 /* AdvertisingGraphicsDesignViewController.m */; };
+		43665DE5166D936900D81502 /* eSimsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43665DE4166D936900D81502 /* eSimsViewController.m */; };
+		4389014A169651BF00936C36 /* newStudentFacultyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43890149169651BF00936C36 /* newStudentFacultyViewController.m */; };
+		4389014D1696528200936C36 /* newStudentFacultyPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389014C1696528200936C36 /* newStudentFacultyPageViewController.m */; };
+		4389015116965D3800936C36 /* constructionCivilEngineeringProfessorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389015016965D3800936C36 /* constructionCivilEngineeringProfessorsViewController.m */; };
+		4389015416965EBE00936C36 /* constructionCivilEngineeringPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389015316965EBE00936C36 /* constructionCivilEngineeringPageVC.m */; };
+		43A4DEAE1668728D0053C5DE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4347C652163CA01D00978B14 /* Default.png */; };
+		43A4DEB3166872B30053C5DE /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4DEB0166872B30053C5DE /* splashscreen.png */; };
+		43A4DEB4166872B30053C5DE /* splashscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4DEB1166872B30053C5DE /* splashscreen@2x.png */; };
+		43A4DEB6166872FF0053C5DE /* splashscreen-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4DEB5166872FF0053C5DE /* splashscreen-568@2x.png */; };
+		43A4DEBE166879BA0053C5DE /* cunylogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4DEBD166879BA0053C5DE /* cunylogo.png */; };
+		43BAAC171645B923001A00D5 /* Physics_Professors_List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43BAAC161645B923001A00D5 /* Physics_Professors_List.plist */; };
+		43BAAC1A1645BBED001A00D5 /* Physics_Professors_Emails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43BAAC191645BBED001A00D5 /* Physics_Professors_Emails.plist */; };
+		43BAAC1C1645BD18001A00D5 /* Physics_Professors_Numbers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43BAAC1B1645BD18001A00D5 /* Physics_Professors_Numbers.plist */; };
+		43BAAC1F1645BE94001A00D5 /* physicsProfessorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BAAC1E1645BE94001A00D5 /* physicsProfessorsViewController.m */; };
+		43BAAC211645C75A001A00D5 /* CST_Professor_List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43BAAC201645C75A001A00D5 /* CST_Professor_List.plist */; };
+		43BAAC231645C952001A00D5 /* CST_Professor_Email.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43BAAC221645C952001A00D5 /* CST_Professor_Email.plist */; };
+		43BAAC251645C958001A00D5 /* CST_Professor_Number.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43BAAC241645C958001A00D5 /* CST_Professor_Number.plist */; };
+		43BCA9DB16534477005E0711 /* New_Student_ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BCA9DA16534477005E0711 /* New_Student_ListViewController.m */; };
+		43BCA9DE1653448D005E0711 /* New_Student_List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43BCA9DD1653448D005E0711 /* New_Student_List.plist */; };
+		43BCA9E0165344A2005E0711 /* New_Student_Emails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43BCA9DF165344A1005E0711 /* New_Student_Emails.plist */; };
+		43BCA9E2165344A8005E0711 /* New_Student_Numbers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43BCA9E1165344A8005E0711 /* New_Student_Numbers.plist */; };
+		43BCA9E416534ADC005E0711 /* C.O.P.E._List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43BCA9E316534ADC005E0711 /* C.O.P.E._List.plist */; };
+		43BCA9E616534AE4005E0711 /* C.O.P.E._Numbers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43BCA9E516534AE4005E0711 /* C.O.P.E._Numbers.plist */; };
+		43BCA9E816534AF0005E0711 /* C.O.P.E._Emails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43BCA9E716534AF0005E0711 /* C.O.P.E._Emails.plist */; };
+		43BCA9EE16534BBB005E0711 /* COPEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BCA9ED16534BBB005E0711 /* COPEViewController.m */; };
 		43C146E2163CB1F2004EEEE5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C146E1163CB1F2004EEEE5 /* icon.png */; };
 		43C146E4163CB352004EEEE5 /* ipadIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C146E3163CB352004EEEE5 /* ipadIcon.png */; };
+		43C9DA4B1669915400217281 /* Home+Screen-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C9DA481669915400217281 /* Home+Screen-568@2x.png */; };
+		43C9DA4C1669915400217281 /* Home+Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C9DA491669915400217281 /* Home+Screen.png */; };
+		43C9DA4D1669915400217281 /* Home+Screen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C9DA4A1669915400217281 /* Home+Screen@2x.png */; };
+		43C9DA4F1669942900217281 /* cunylogofull.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C9DA4E1669942900217281 /* cunylogofull.png */; };
+		43C9DA57166996F800217281 /* eSims+Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C9DA50166996F800217281 /* eSims+Selected.png */; };
+		43C9DA58166996F800217281 /* Home+Button+Non-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C9DA51166996F800217281 /* Home+Button+Non-Selected.png */; };
+		43C9DA59166996F800217281 /* Home+Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C9DA52166996F800217281 /* Home+Selected.png */; };
+		43C9DA5A166996F800217281 /* Planner+Non-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C9DA53166996F800217281 /* Planner+Non-Selected.png */; };
+		43C9DA5B166996F800217281 /* Planner+Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C9DA54166996F800217281 /* Planner+Selected.png */; };
+		43C9DA5C166996F800217281 /* Proff+Non-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C9DA55166996F800217281 /* Proff+Non-Selected.png */; };
+		43C9DA5D166996F800217281 /* Proff+Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C9DA56166996F800217281 /* Proff+Selected.png */; };
+		43C9DA60166998AF00217281 /* eSims+Non-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C9DA5F166998AF00217281 /* eSims+Non-Selected.png */; };
+		43CFDC1216956ABE00821DB0 /* emt_cetProfessorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CFDC1116956ABE00821DB0 /* emt_cetProfessorsViewController.m */; };
+		43CFDC1516956C3100821DB0 /* professor_testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CFDC1416956C3100821DB0 /* professor_testViewController.m */; };
 		43D3062A1644A2A000AB2799 /* Math_Professors_List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43D306291644A2A000AB2799 /* Math_Professors_List.plist */; };
 		43D3062D1644A8B300AB2799 /* Math_Professors_Numbers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43D3062C1644A8B300AB2799 /* Math_Professors_Numbers.plist */; };
 		43D3062F1644AC7100AB2799 /* Math_Professors_Emails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43D3062E1644AC7100AB2799 /* Math_Professors_Emails.plist */; };
+		43DCD08516803784008EE115 /* calendarzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DCD08416803784008EE115 /* calendarzViewController.m */; };
+		43DCD08816803E8C008EE115 /* cunyPortalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DCD08716803E8C008EE115 /* cunyPortalViewController.m */; };
+		43E2AFB61647399800B0DF4F /* CSTProfessorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E2AFB51647399800B0DF4F /* CSTProfessorsViewController.m */; };
+		43E99D871696270300DDBF2C /* math_ProfessorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E99D861696270300DDBF2C /* math_ProfessorsViewController.m */; };
+		43EC5BE916481FC300653B2D /* AdvertisingGraphicsDesign_Professors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43EC5BE816481FC300653B2D /* AdvertisingGraphicsDesign_Professors.plist */; };
+		43EC5BEC16481FE000653B2D /* AdvertisingGraphicsDesign_Numbers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43EC5BEB16481FE000653B2D /* AdvertisingGraphicsDesign_Numbers.plist */; };
+		43EC5BEE16481FE600653B2D /* AdvertisingGraphicsDesign_Emails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43EC5BED16481FE600653B2D /* AdvertisingGraphicsDesign_Emails.plist */; };
+		43EC5BFA164856A300653B2D /* buildingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43EC5BF9164856A300653B2D /* buildingListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		43415FAC16444C850067943F /* N_1st.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_1st.h; path = PO/N_1st.h; sourceTree = SOURCE_ROOT; };
-		43415FAD16444C850067943F /* N_1st.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_1st.m; path = PO/N_1st.m; sourceTree = SOURCE_ROOT; };
-		43415FAE16444C850067943F /* N_4th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_4th.h; path = PO/N_4th.h; sourceTree = SOURCE_ROOT; };
-		43415FAF16444C850067943F /* N_4th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_4th.m; path = PO/N_4th.m; sourceTree = SOURCE_ROOT; };
-		43415FB016444C850067943F /* N_5th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_5th.h; path = PO/N_5th.h; sourceTree = SOURCE_ROOT; };
-		43415FB116444C850067943F /* N_5th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_5th.m; path = PO/N_5th.m; sourceTree = SOURCE_ROOT; };
-		43415FB216444C850067943F /* N_6th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_6th.h; path = PO/N_6th.h; sourceTree = SOURCE_ROOT; };
-		43415FB316444C850067943F /* N_6th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_6th.m; path = PO/N_6th.m; sourceTree = SOURCE_ROOT; };
-		43415FB416444C850067943F /* N_7th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_7th.h; path = PO/N_7th.h; sourceTree = SOURCE_ROOT; };
-		43415FB516444C850067943F /* N_7th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_7th.m; path = PO/N_7th.m; sourceTree = SOURCE_ROOT; };
-		43415FB616444C850067943F /* N_8th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_8th.h; path = PO/N_8th.h; sourceTree = SOURCE_ROOT; };
-		43415FB716444C850067943F /* N_8th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_8th.m; path = PO/N_8th.m; sourceTree = SOURCE_ROOT; };
-		43415FB816444C850067943F /* N_9th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_9th.h; path = PO/N_9th.h; sourceTree = SOURCE_ROOT; };
-		43415FB916444C850067943F /* N_9th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_9th.m; path = PO/N_9th.m; sourceTree = SOURCE_ROOT; };
-		43415FBA16444C850067943F /* N_10th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_10th.h; path = PO/N_10th.h; sourceTree = SOURCE_ROOT; };
-		43415FBB16444C850067943F /* N_10th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_10th.m; path = PO/N_10th.m; sourceTree = SOURCE_ROOT; };
-		43415FBC16444C850067943F /* N_11th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_11th.h; path = PO/N_11th.h; sourceTree = SOURCE_ROOT; };
-		43415FBD16444C850067943F /* N_11th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_11th.m; path = PO/N_11th.m; sourceTree = SOURCE_ROOT; };
-		43415FBE16444C850067943F /* N_12th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = N_12th.h; path = PO/N_12th.h; sourceTree = SOURCE_ROOT; };
-		43415FBF16444C850067943F /* N_12th.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = N_12th.m; path = PO/N_12th.m; sourceTree = SOURCE_ROOT; };
+		4322DEFE16474F0800BD1BB6 /* socialScienceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socialScienceViewController.h; sourceTree = SOURCE_ROOT; };
+		4322DEFF16474F0800BD1BB6 /* socialScienceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = socialScienceViewController.m; sourceTree = SOURCE_ROOT; };
+		4322DF0216474F3100BD1BB6 /* socialScience_Professors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = socialScience_Professors.plist; sourceTree = SOURCE_ROOT; };
+		4322DF0416474F3C00BD1BB6 /* socialScience_Numbers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = socialScience_Numbers.plist; sourceTree = SOURCE_ROOT; };
+		4322DF0616474F4D00BD1BB6 /* socialScience_Emails.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = socialScience_Emails.plist; sourceTree = SOURCE_ROOT; };
+		433C5C23164D642C0050602D /* dentalProfessorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dentalProfessorsViewController.h; sourceTree = "<group>"; };
+		433C5C24164D642C0050602D /* dentalProfessorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dentalProfessorsViewController.m; sourceTree = "<group>"; };
 		43415FC116444CBE0067943F /* mathProfessorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mathProfessorsViewController.h; sourceTree = SOURCE_ROOT; };
 		43415FC216444CBE0067943F /* mathProfessorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mathProfessorsViewController.m; sourceTree = SOURCE_ROOT; };
+		4343231616554C02003795FE /* constructionCivilEngineeringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constructionCivilEngineeringViewController.h; sourceTree = "<group>"; };
+		4343231716554C02003795FE /* constructionCivilEngineeringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = constructionCivilEngineeringViewController.m; sourceTree = "<group>"; };
+		4343231A16554C1E003795FE /* constructionCivilEngineering_List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = constructionCivilEngineering_List.plist; sourceTree = "<group>"; };
+		4343231C16554C26003795FE /* constructionCivilEngineering_Numbers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = constructionCivilEngineering_Numbers.plist; sourceTree = "<group>"; };
+		4343231E16554C2C003795FE /* constructionCivilEngineering_Emails.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = constructionCivilEngineering_Emails.plist; sourceTree = "<group>"; };
 		4347C5AB163C9F6700978B14 /* cbp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cbp.png; sourceTree = "<group>"; };
 		4347C5AC163C9F6700978B14 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
 		4347C5AD163C9F6700978B14 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -269,12 +311,78 @@
 		4347C677163CA0DE00978B14 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		4347C748163CA40800978B14 /* KeychainWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
 		4347C749163CA40800978B14 /* KeychainWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		435D93B11657456200E891A0 /* EMT_CET_List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = EMT_CET_List.plist; path = ../EMT_CET_List.plist; sourceTree = "<group>"; };
+		435D93B41657456D00E891A0 /* EMT_CET_Emails.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = EMT_CET_Emails.plist; path = ../EMT_CET_Emails.plist; sourceTree = "<group>"; };
+		435D93B6165745AC00E891A0 /* EMT_CET_Numbers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EMT_CET_Numbers.plist; sourceTree = "<group>"; };
+		436504AA164F5DFF009E9D95 /* AdvertisingGraphicsDesignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertisingGraphicsDesignViewController.h; sourceTree = SOURCE_ROOT; };
+		436504AB164F5DFF009E9D95 /* AdvertisingGraphicsDesignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertisingGraphicsDesignViewController.m; sourceTree = SOURCE_ROOT; };
+		43665DE3166D936900D81502 /* eSimsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eSimsViewController.h; sourceTree = "<group>"; };
+		43665DE4166D936900D81502 /* eSimsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eSimsViewController.m; sourceTree = "<group>"; };
+		43890148169651BF00936C36 /* newStudentFacultyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newStudentFacultyViewController.h; sourceTree = SOURCE_ROOT; };
+		43890149169651BF00936C36 /* newStudentFacultyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newStudentFacultyViewController.m; sourceTree = SOURCE_ROOT; };
+		4389014B1696528200936C36 /* newStudentFacultyPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newStudentFacultyPageViewController.h; sourceTree = SOURCE_ROOT; };
+		4389014C1696528200936C36 /* newStudentFacultyPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newStudentFacultyPageViewController.m; sourceTree = SOURCE_ROOT; };
+		4389014F16965D3800936C36 /* constructionCivilEngineeringProfessorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constructionCivilEngineeringProfessorsViewController.h; sourceTree = "<group>"; };
+		4389015016965D3800936C36 /* constructionCivilEngineeringProfessorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = constructionCivilEngineeringProfessorsViewController.m; sourceTree = "<group>"; };
+		4389015216965EBE00936C36 /* constructionCivilEngineeringPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constructionCivilEngineeringPageVC.h; sourceTree = "<group>"; };
+		4389015316965EBE00936C36 /* constructionCivilEngineeringPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = constructionCivilEngineeringPageVC.m; sourceTree = "<group>"; };
+		43A4DEB0166872B30053C5DE /* splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen.png; sourceTree = "<group>"; };
+		43A4DEB1166872B30053C5DE /* splashscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splashscreen@2x.png"; sourceTree = "<group>"; };
+		43A4DEB5166872FF0053C5DE /* splashscreen-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splashscreen-568@2x.png"; sourceTree = "<group>"; };
+		43A4DEBD166879BA0053C5DE /* cunylogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cunylogo.png; sourceTree = "<group>"; };
+		43BAAC161645B923001A00D5 /* Physics_Professors_List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Physics_Professors_List.plist; sourceTree = SOURCE_ROOT; };
+		43BAAC191645BBED001A00D5 /* Physics_Professors_Emails.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Physics_Professors_Emails.plist; sourceTree = SOURCE_ROOT; };
+		43BAAC1B1645BD18001A00D5 /* Physics_Professors_Numbers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Physics_Professors_Numbers.plist; sourceTree = SOURCE_ROOT; };
+		43BAAC1D1645BE94001A00D5 /* physicsProfessorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = physicsProfessorsViewController.h; sourceTree = SOURCE_ROOT; };
+		43BAAC1E1645BE94001A00D5 /* physicsProfessorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = physicsProfessorsViewController.m; sourceTree = SOURCE_ROOT; };
+		43BAAC201645C75A001A00D5 /* CST_Professor_List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CST_Professor_List.plist; sourceTree = SOURCE_ROOT; };
+		43BAAC221645C952001A00D5 /* CST_Professor_Email.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CST_Professor_Email.plist; sourceTree = SOURCE_ROOT; };
+		43BAAC241645C958001A00D5 /* CST_Professor_Number.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CST_Professor_Number.plist; sourceTree = SOURCE_ROOT; };
+		43BCA9D916534477005E0711 /* New_Student_ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = New_Student_ListViewController.h; sourceTree = SOURCE_ROOT; };
+		43BCA9DA16534477005E0711 /* New_Student_ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = New_Student_ListViewController.m; sourceTree = SOURCE_ROOT; };
+		43BCA9DD1653448D005E0711 /* New_Student_List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = New_Student_List.plist; sourceTree = SOURCE_ROOT; };
+		43BCA9DF165344A1005E0711 /* New_Student_Emails.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = New_Student_Emails.plist; sourceTree = SOURCE_ROOT; };
+		43BCA9E1165344A8005E0711 /* New_Student_Numbers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = New_Student_Numbers.plist; sourceTree = SOURCE_ROOT; };
+		43BCA9E316534ADC005E0711 /* C.O.P.E._List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = C.O.P.E._List.plist; sourceTree = SOURCE_ROOT; };
+		43BCA9E516534AE4005E0711 /* C.O.P.E._Numbers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = C.O.P.E._Numbers.plist; path = ../C.O.P.E._Numbers.plist; sourceTree = "<group>"; };
+		43BCA9E716534AF0005E0711 /* C.O.P.E._Emails.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = C.O.P.E._Emails.plist; path = ../C.O.P.E._Emails.plist; sourceTree = "<group>"; };
+		43BCA9EC16534BBB005E0711 /* COPEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COPEViewController.h; sourceTree = "<group>"; };
+		43BCA9ED16534BBB005E0711 /* COPEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COPEViewController.m; sourceTree = "<group>"; };
 		43C146E1163CB1F2004EEEE5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		43C146E3163CB352004EEEE5 /* ipadIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipadIcon.png; sourceTree = "<group>"; };
 		43C146E5163CB489004EEEE5 /* POz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = POz.entitlements; sourceTree = "<group>"; };
+		43C9DA481669915400217281 /* Home+Screen-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home+Screen-568@2x.png"; sourceTree = "<group>"; };
+		43C9DA491669915400217281 /* Home+Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home+Screen.png"; sourceTree = "<group>"; };
+		43C9DA4A1669915400217281 /* Home+Screen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home+Screen@2x.png"; sourceTree = "<group>"; };
+		43C9DA4E1669942900217281 /* cunylogofull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cunylogofull.png; sourceTree = "<group>"; };
+		43C9DA50166996F800217281 /* eSims+Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eSims+Selected.png"; sourceTree = "<group>"; };
+		43C9DA51166996F800217281 /* Home+Button+Non-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home+Button+Non-Selected.png"; sourceTree = "<group>"; };
+		43C9DA52166996F800217281 /* Home+Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home+Selected.png"; sourceTree = "<group>"; };
+		43C9DA53166996F800217281 /* Planner+Non-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Planner+Non-Selected.png"; sourceTree = "<group>"; };
+		43C9DA54166996F800217281 /* Planner+Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Planner+Selected.png"; sourceTree = "<group>"; };
+		43C9DA55166996F800217281 /* Proff+Non-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proff+Non-Selected.png"; sourceTree = "<group>"; };
+		43C9DA56166996F800217281 /* Proff+Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proff+Selected.png"; sourceTree = "<group>"; };
+		43C9DA5F166998AF00217281 /* eSims+Non-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eSims+Non-Selected.png"; sourceTree = "<group>"; };
+		43CFDC1016956ABE00821DB0 /* emt_cetProfessorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = emt_cetProfessorsViewController.h; sourceTree = "<group>"; };
+		43CFDC1116956ABE00821DB0 /* emt_cetProfessorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = emt_cetProfessorsViewController.m; sourceTree = "<group>"; };
+		43CFDC1316956C3100821DB0 /* professor_testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = professor_testViewController.h; sourceTree = "<group>"; };
+		43CFDC1416956C3100821DB0 /* professor_testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = professor_testViewController.m; sourceTree = "<group>"; };
 		43D306291644A2A000AB2799 /* Math_Professors_List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Math_Professors_List.plist; sourceTree = SOURCE_ROOT; };
 		43D3062C1644A8B300AB2799 /* Math_Professors_Numbers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Math_Professors_Numbers.plist; sourceTree = SOURCE_ROOT; };
 		43D3062E1644AC7100AB2799 /* Math_Professors_Emails.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Math_Professors_Emails.plist; sourceTree = SOURCE_ROOT; };
+		43DCD08316803784008EE115 /* calendarzViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = calendarzViewController.h; sourceTree = "<group>"; };
+		43DCD08416803784008EE115 /* calendarzViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = calendarzViewController.m; sourceTree = "<group>"; };
+		43DCD08616803E8C008EE115 /* cunyPortalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cunyPortalViewController.h; sourceTree = "<group>"; };
+		43DCD08716803E8C008EE115 /* cunyPortalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cunyPortalViewController.m; sourceTree = "<group>"; };
+		43E2AFB41647399800B0DF4F /* CSTProfessorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTProfessorsViewController.h; sourceTree = SOURCE_ROOT; };
+		43E2AFB51647399800B0DF4F /* CSTProfessorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTProfessorsViewController.m; sourceTree = SOURCE_ROOT; };
+		43E99D851696270300DDBF2C /* math_ProfessorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = math_ProfessorsViewController.h; path = PO/math_ProfessorsViewController.h; sourceTree = SOURCE_ROOT; };
+		43E99D861696270300DDBF2C /* math_ProfessorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = math_ProfessorsViewController.m; path = PO/math_ProfessorsViewController.m; sourceTree = SOURCE_ROOT; };
+		43EC5BE816481FC300653B2D /* AdvertisingGraphicsDesign_Professors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AdvertisingGraphicsDesign_Professors.plist; sourceTree = SOURCE_ROOT; };
+		43EC5BEB16481FE000653B2D /* AdvertisingGraphicsDesign_Numbers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AdvertisingGraphicsDesign_Numbers.plist; sourceTree = SOURCE_ROOT; };
+		43EC5BED16481FE600653B2D /* AdvertisingGraphicsDesign_Emails.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AdvertisingGraphicsDesign_Emails.plist; sourceTree = SOURCE_ROOT; };
+		43EC5BF8164856A300653B2D /* buildingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buildingListViewController.h; sourceTree = "<group>"; };
+		43EC5BF9164856A300653B2D /* buildingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = buildingListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +411,15 @@
 				43C146E1163CB1F2004EEEE5 /* icon.png */,
 				4347C5AC163C9F6700978B14 /* cloud.png */,
 				4347C5AD163C9F6700978B14 /* Default-568h@2x.png */,
+				43A4DEB0166872B30053C5DE /* splashscreen.png */,
+				43C9DA481669915400217281 /* Home+Screen-568@2x.png */,
+				43C9DA491669915400217281 /* Home+Screen.png */,
+				43C9DA4A1669915400217281 /* Home+Screen@2x.png */,
+				43A4DEB5166872FF0053C5DE /* splashscreen-568@2x.png */,
+				43C9DA4E1669942900217281 /* cunylogofull.png */,
+				43C9DA5E1669970000217281 /* home_screen_buttons */,
+				43A4DEBD166879BA0053C5DE /* cunylogo.png */,
+				43A4DEB1166872B30053C5DE /* splashscreen@2x.png */,
 				43C146E3163CB352004EEEE5 /* ipadIcon.png */,
 				4347C5AE163C9F6700978B14 /* Default.png */,
 				4347C5AF163C9F6700978B14 /* Default@2x.png */,
@@ -316,6 +433,10 @@
 		4347C5A2163C9F5000978B14 = {
 			isa = PBXGroup;
 			children = (
+				43665DE3166D936900D81502 /* eSimsViewController.h */,
+				43DCD08616803E8C008EE115 /* cunyPortalViewController.h */,
+				43DCD08716803E8C008EE115 /* cunyPortalViewController.m */,
+				43665DE4166D936900D81502 /* eSimsViewController.m */,
 				4347C5AB163C9F6700978B14 /* cbp.png */,
 				4347C748163CA40800978B14 /* KeychainWrapper.h */,
 				4347C749163CA40800978B14 /* KeychainWrapper.m */,
@@ -337,6 +458,16 @@
 		4347C5B8163C9F6700978B14 /* PO */ = {
 			isa = PBXGroup;
 			children = (
+				4389014E16965C4C00936C36 /* V_Floors */,
+				433C5C23164D642C0050602D /* dentalProfessorsViewController.h */,
+				433C5C24164D642C0050602D /* dentalProfessorsViewController.m */,
+				43BCA9E516534AE4005E0711 /* C.O.P.E._Numbers.plist */,
+				43BCA9E316534ADC005E0711 /* C.O.P.E._List.plist */,
+				43BCA9E716534AF0005E0711 /* C.O.P.E._Emails.plist */,
+				43BCA9EC16534BBB005E0711 /* COPEViewController.h */,
+				43BCA9ED16534BBB005E0711 /* COPEViewController.m */,
+				43EC5BF8164856A300653B2D /* buildingListViewController.h */,
+				43EC5BF9164856A300653B2D /* buildingListViewController.m */,
 				4347C5B9163C9F6700978B14 /* A_BuildingViewController.h */,
 				4347C5BA163C9F6700978B14 /* A_BuildingViewController.m */,
 				4347C5BB163C9F6700978B14 /* audit.png */,
@@ -349,7 +480,6 @@
 				4347C5C2163C9F6700978B14 /* CalendarVC.h */,
 				4347C5C3163C9F6700978B14 /* CalendarVC.m */,
 				4347C5C4163C9F6700978B14 /* cbp.png */,
-				4347C5C5163C9F6700978B14 /* Classes */,
 				4347C5C6163C9F6700978B14 /* cPortalViewController.h */,
 				4347C5C7163C9F6700978B14 /* cPortalViewController.m */,
 				4347C5C8163C9F6700978B14 /* cuny.png */,
@@ -368,6 +498,8 @@
 				4347C5D5163C9F6700978B14 /* InfoPlist.strings */,
 				4347C5D7163C9F6700978B14 /* MainStoryboard_iPad.storyboard */,
 				4347C5D9163C9F6700978B14 /* MainStoryboard_iPhone.storyboard */,
+				43DCD08316803784008EE115 /* calendarzViewController.h */,
+				43DCD08416803784008EE115 /* calendarzViewController.m */,
 				4347C5DB163C9F6700978B14 /* G_BuildingViewController.h */,
 				4347C5DC163C9F6700978B14 /* G_BuildingViewController.m */,
 				4347C5DD163C9F6700978B14 /* gmaps.png */,
@@ -434,41 +566,45 @@
 			path = PO;
 			sourceTree = "<group>";
 		};
-		4347C5C5163C9F6700978B14 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		4347C607163C9F6700978B14 /* N_Floors */ = {
 			isa = PBXGroup;
 			children = (
+				43890148169651BF00936C36 /* newStudentFacultyViewController.h */,
+				43890149169651BF00936C36 /* newStudentFacultyViewController.m */,
+				4389014B1696528200936C36 /* newStudentFacultyPageViewController.h */,
+				4389014C1696528200936C36 /* newStudentFacultyPageViewController.m */,
+				43E99D851696270300DDBF2C /* math_ProfessorsViewController.h */,
+				43E99D861696270300DDBF2C /* math_ProfessorsViewController.m */,
+				43BCA9DD1653448D005E0711 /* New_Student_List.plist */,
+				43BCA9DF165344A1005E0711 /* New_Student_Emails.plist */,
+				43BCA9E1165344A8005E0711 /* New_Student_Numbers.plist */,
+				43BAAC161645B923001A00D5 /* Physics_Professors_List.plist */,
+				43BAAC201645C75A001A00D5 /* CST_Professor_List.plist */,
+				43BAAC221645C952001A00D5 /* CST_Professor_Email.plist */,
+				43BAAC241645C958001A00D5 /* CST_Professor_Number.plist */,
+				43E2AFB41647399800B0DF4F /* CSTProfessorsViewController.h */,
+				43E2AFB51647399800B0DF4F /* CSTProfessorsViewController.m */,
+				43EC5BE816481FC300653B2D /* AdvertisingGraphicsDesign_Professors.plist */,
+				43EC5BEB16481FE000653B2D /* AdvertisingGraphicsDesign_Numbers.plist */,
+				43EC5BED16481FE600653B2D /* AdvertisingGraphicsDesign_Emails.plist */,
+				436504AA164F5DFF009E9D95 /* AdvertisingGraphicsDesignViewController.h */,
+				436504AB164F5DFF009E9D95 /* AdvertisingGraphicsDesignViewController.m */,
+				4322DF0216474F3100BD1BB6 /* socialScience_Professors.plist */,
+				4322DF0416474F3C00BD1BB6 /* socialScience_Numbers.plist */,
+				4322DF0616474F4D00BD1BB6 /* socialScience_Emails.plist */,
+				4322DEFE16474F0800BD1BB6 /* socialScienceViewController.h */,
+				4322DEFF16474F0800BD1BB6 /* socialScienceViewController.m */,
+				43BAAC1B1645BD18001A00D5 /* Physics_Professors_Numbers.plist */,
+				43BAAC1D1645BE94001A00D5 /* physicsProfessorsViewController.h */,
+				43BAAC1E1645BE94001A00D5 /* physicsProfessorsViewController.m */,
+				43BAAC191645BBED001A00D5 /* Physics_Professors_Emails.plist */,
 				43D306291644A2A000AB2799 /* Math_Professors_List.plist */,
 				43D3062C1644A8B300AB2799 /* Math_Professors_Numbers.plist */,
 				43D3062E1644AC7100AB2799 /* Math_Professors_Emails.plist */,
-				43415FAC16444C850067943F /* N_1st.h */,
-				43415FAD16444C850067943F /* N_1st.m */,
-				43415FAE16444C850067943F /* N_4th.h */,
-				43415FAF16444C850067943F /* N_4th.m */,
-				43415FB016444C850067943F /* N_5th.h */,
-				43415FB116444C850067943F /* N_5th.m */,
-				43415FB216444C850067943F /* N_6th.h */,
-				43415FB316444C850067943F /* N_6th.m */,
-				43415FB416444C850067943F /* N_7th.h */,
-				43415FB516444C850067943F /* N_7th.m */,
+				43BCA9D916534477005E0711 /* New_Student_ListViewController.h */,
+				43BCA9DA16534477005E0711 /* New_Student_ListViewController.m */,
 				43415FC116444CBE0067943F /* mathProfessorsViewController.h */,
 				43415FC216444CBE0067943F /* mathProfessorsViewController.m */,
-				43415FB616444C850067943F /* N_8th.h */,
-				43415FB716444C850067943F /* N_8th.m */,
-				43415FB816444C850067943F /* N_9th.h */,
-				43415FB916444C850067943F /* N_9th.m */,
-				43415FBA16444C850067943F /* N_10th.h */,
-				43415FBB16444C850067943F /* N_10th.m */,
-				43415FBC16444C850067943F /* N_11th.h */,
-				43415FBD16444C850067943F /* N_11th.m */,
-				43415FBE16444C850067943F /* N_12th.h */,
-				43415FBF16444C850067943F /* N_12th.m */,
 			);
 			path = N_Floors;
 			sourceTree = "<group>";
@@ -544,6 +680,44 @@
 				4347C656163CA01D00978B14 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4389014E16965C4C00936C36 /* V_Floors */ = {
+			isa = PBXGroup;
+			children = (
+				4389015216965EBE00936C36 /* constructionCivilEngineeringPageVC.h */,
+				4389015316965EBE00936C36 /* constructionCivilEngineeringPageVC.m */,
+				4389014F16965D3800936C36 /* constructionCivilEngineeringProfessorsViewController.h */,
+				4389015016965D3800936C36 /* constructionCivilEngineeringProfessorsViewController.m */,
+				4343231616554C02003795FE /* constructionCivilEngineeringViewController.h */,
+				4343231716554C02003795FE /* constructionCivilEngineeringViewController.m */,
+				4343231A16554C1E003795FE /* constructionCivilEngineering_List.plist */,
+				435D93B11657456200E891A0 /* EMT_CET_List.plist */,
+				435D93B6165745AC00E891A0 /* EMT_CET_Numbers.plist */,
+				43CFDC1016956ABE00821DB0 /* emt_cetProfessorsViewController.h */,
+				43CFDC1116956ABE00821DB0 /* emt_cetProfessorsViewController.m */,
+				43CFDC1316956C3100821DB0 /* professor_testViewController.h */,
+				43CFDC1416956C3100821DB0 /* professor_testViewController.m */,
+				435D93B41657456D00E891A0 /* EMT_CET_Emails.plist */,
+				4343231C16554C26003795FE /* constructionCivilEngineering_Numbers.plist */,
+				4343231E16554C2C003795FE /* constructionCivilEngineering_Emails.plist */,
+			);
+			name = V_Floors;
+			sourceTree = "<group>";
+		};
+		43C9DA5E1669970000217281 /* home_screen_buttons */ = {
+			isa = PBXGroup;
+			children = (
+				43C9DA50166996F800217281 /* eSims+Selected.png */,
+				43C9DA51166996F800217281 /* Home+Button+Non-Selected.png */,
+				43C9DA5F166998AF00217281 /* eSims+Non-Selected.png */,
+				43C9DA52166996F800217281 /* Home+Selected.png */,
+				43C9DA53166996F800217281 /* Planner+Non-Selected.png */,
+				43C9DA54166996F800217281 /* Planner+Selected.png */,
+				43C9DA55166996F800217281 /* Proff+Non-Selected.png */,
+				43C9DA56166996F800217281 /* Proff+Selected.png */,
+			);
+			name = home_screen_buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -651,6 +825,47 @@
 				43D3062A1644A2A000AB2799 /* Math_Professors_List.plist in Resources */,
 				43D3062D1644A8B300AB2799 /* Math_Professors_Numbers.plist in Resources */,
 				43D3062F1644AC7100AB2799 /* Math_Professors_Emails.plist in Resources */,
+				43BAAC171645B923001A00D5 /* Physics_Professors_List.plist in Resources */,
+				43BAAC1A1645BBED001A00D5 /* Physics_Professors_Emails.plist in Resources */,
+				43BAAC1C1645BD18001A00D5 /* Physics_Professors_Numbers.plist in Resources */,
+				43BAAC211645C75A001A00D5 /* CST_Professor_List.plist in Resources */,
+				43BAAC231645C952001A00D5 /* CST_Professor_Email.plist in Resources */,
+				43BAAC251645C958001A00D5 /* CST_Professor_Number.plist in Resources */,
+				4322DF0316474F3100BD1BB6 /* socialScience_Professors.plist in Resources */,
+				4322DF0516474F3C00BD1BB6 /* socialScience_Numbers.plist in Resources */,
+				4322DF0716474F4E00BD1BB6 /* socialScience_Emails.plist in Resources */,
+				43EC5BE916481FC300653B2D /* AdvertisingGraphicsDesign_Professors.plist in Resources */,
+				43EC5BEC16481FE000653B2D /* AdvertisingGraphicsDesign_Numbers.plist in Resources */,
+				43EC5BEE16481FE600653B2D /* AdvertisingGraphicsDesign_Emails.plist in Resources */,
+				43BCA9DE1653448D005E0711 /* New_Student_List.plist in Resources */,
+				43BCA9E0165344A2005E0711 /* New_Student_Emails.plist in Resources */,
+				43BCA9E2165344A8005E0711 /* New_Student_Numbers.plist in Resources */,
+				43BCA9E416534ADC005E0711 /* C.O.P.E._List.plist in Resources */,
+				43BCA9E616534AE4005E0711 /* C.O.P.E._Numbers.plist in Resources */,
+				43BCA9E816534AF0005E0711 /* C.O.P.E._Emails.plist in Resources */,
+				4343231B16554C1E003795FE /* constructionCivilEngineering_List.plist in Resources */,
+				4343231D16554C26003795FE /* constructionCivilEngineering_Numbers.plist in Resources */,
+				4343231F16554C2C003795FE /* constructionCivilEngineering_Emails.plist in Resources */,
+				435D93B21657456200E891A0 /* EMT_CET_List.plist in Resources */,
+				435D93B51657456D00E891A0 /* EMT_CET_Emails.plist in Resources */,
+				435D93B7165745AC00E891A0 /* EMT_CET_Numbers.plist in Resources */,
+				43A4DEAE1668728D0053C5DE /* Default.png in Resources */,
+				43A4DEB3166872B30053C5DE /* splashscreen.png in Resources */,
+				43A4DEB4166872B30053C5DE /* splashscreen@2x.png in Resources */,
+				43A4DEB6166872FF0053C5DE /* splashscreen-568@2x.png in Resources */,
+				43A4DEBE166879BA0053C5DE /* cunylogo.png in Resources */,
+				43C9DA4B1669915400217281 /* Home+Screen-568@2x.png in Resources */,
+				43C9DA4C1669915400217281 /* Home+Screen.png in Resources */,
+				43C9DA4D1669915400217281 /* Home+Screen@2x.png in Resources */,
+				43C9DA4F1669942900217281 /* cunylogofull.png in Resources */,
+				43C9DA57166996F800217281 /* eSims+Selected.png in Resources */,
+				43C9DA58166996F800217281 /* Home+Button+Non-Selected.png in Resources */,
+				43C9DA59166996F800217281 /* Home+Selected.png in Resources */,
+				43C9DA5A166996F800217281 /* Planner+Non-Selected.png in Resources */,
+				43C9DA5B166996F800217281 /* Planner+Selected.png in Resources */,
+				43C9DA5C166996F800217281 /* Proff+Non-Selected.png in Resources */,
+				43C9DA5D166996F800217281 /* Proff+Selected.png in Resources */,
+				43C9DA60166998AF00217281 /* eSims+Non-Selected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,16 +876,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43415FC516444D490067943F /* N_1st.m in Sources */,
-				43415FC716444D490067943F /* N_4th.m in Sources */,
-				43415FC916444D490067943F /* N_5th.m in Sources */,
-				43415FCB16444D490067943F /* N_6th.m in Sources */,
-				43415FCD16444D490067943F /* N_7th.m in Sources */,
-				43415FD016444D490067943F /* N_8th.m in Sources */,
-				43415FD216444D490067943F /* N_9th.m in Sources */,
-				43415FD416444D490067943F /* N_10th.m in Sources */,
-				43415FD616444D490067943F /* N_11th.m in Sources */,
-				43415FD816444D490067943F /* N_12th.m in Sources */,
 				4347C74B163CA5AD00978B14 /* KeychainWrapper.m in Sources */,
 				4347C715163CA1D400978B14 /* testModel.xcdatamodeld in Sources */,
 				4347C6F2163CA1BF00978B14 /* A_BuildingViewController.m in Sources */,
@@ -699,6 +904,25 @@
 				4347C713163CA1BF00978B14 /* V_1st.m in Sources */,
 				4347C714163CA1BF00978B14 /* V_BuildingViewController.m in Sources */,
 				43415FC316444CBE0067943F /* mathProfessorsViewController.m in Sources */,
+				43BAAC1F1645BE94001A00D5 /* physicsProfessorsViewController.m in Sources */,
+				43E2AFB61647399800B0DF4F /* CSTProfessorsViewController.m in Sources */,
+				4322DF0016474F0800BD1BB6 /* socialScienceViewController.m in Sources */,
+				43EC5BFA164856A300653B2D /* buildingListViewController.m in Sources */,
+				433C5C25164D642C0050602D /* dentalProfessorsViewController.m in Sources */,
+				436504AC164F5DFF009E9D95 /* AdvertisingGraphicsDesignViewController.m in Sources */,
+				43BCA9DB16534477005E0711 /* New_Student_ListViewController.m in Sources */,
+				43BCA9EE16534BBB005E0711 /* COPEViewController.m in Sources */,
+				4343231816554C02003795FE /* constructionCivilEngineeringViewController.m in Sources */,
+				43665DE5166D936900D81502 /* eSimsViewController.m in Sources */,
+				43DCD08516803784008EE115 /* calendarzViewController.m in Sources */,
+				43DCD08816803E8C008EE115 /* cunyPortalViewController.m in Sources */,
+				43CFDC1216956ABE00821DB0 /* emt_cetProfessorsViewController.m in Sources */,
+				43CFDC1516956C3100821DB0 /* professor_testViewController.m in Sources */,
+				43E99D871696270300DDBF2C /* math_ProfessorsViewController.m in Sources */,
+				4389014A169651BF00936C36 /* newStudentFacultyViewController.m in Sources */,
+				4389014D1696528200936C36 /* newStudentFacultyPageViewController.m in Sources */,
+				4389015116965D3800936C36 /* constructionCivilEngineeringProfessorsViewController.m in Sources */,
+				4389015416965EBE00936C36 /* constructionCivilEngineeringPageVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

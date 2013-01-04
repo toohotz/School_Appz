@@ -7,7 +7,9 @@
 //
 
 #import "V_BuildingViewController.h"
-#import "buildingsViewController.h"
+#import "buildingListViewController.h"
+#import "emt_cetProfessorsViewController.h"
+#import "constructionCivilEngineeringProfessorsViewController.h"
 
 
 @interface V_BuildingViewController ()
@@ -22,10 +24,10 @@
 {
     [super viewDidLoad];
     
-    [self initialViewSetup];
+//    [self initialViewSetup];
     
-    [self navBarSetup];
-    
+//    [self navBarSetup];
+    self.navigationController.navigationBarHidden = NO;
     [self initTableView];
     
 
@@ -52,7 +54,7 @@
     
     contentView.backgroundColor = [UIColor clearColor];
     [self setView:contentView];
-    V_floors = [[NSArray alloc] initWithObjects:@"1st Floor", @"2nd Floor", @"3rd Floor", @" 4th Floor", @"5th Floor", @"6th Floor", @"7th Floor", @"8th Floor", nil];
+
     }
 
 #pragma mark - Navbar Setup
@@ -81,7 +83,8 @@
 {
     //    ***** WORKING PART ****** //
     //    0,416,174,375
-    tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 45, 174, 280) style:UITableViewStylePlain];
+        V_floors = [[NSArray alloc] initWithObjects:@"1st Floor", @"2nd Floor", @"3rd Floor", @"4th Floor", @"5th Floor", @"6th Floor", @"7th Floor", @"8th Floor", nil];
+    tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.view.bounds.origin.y+33, 174, 280) style:UITableViewStylePlain];
     
     tableView.dataSource = self;
     tableView.delegate = self;
@@ -93,9 +96,8 @@
 #pragma mark - Custom Back Button
 -(void) backButton
 {
-    buildingsViewController *buildingsView = [[buildingsViewController alloc] init];
-    
-    [self presentViewController:buildingsView animated:YES completion:NULL];
+    buildingListViewController *buildingsVC = [[buildingListViewController alloc] init];
+    [self presentViewController:buildingsVC animated:YES completion:NULL];
 }
 
 
@@ -183,13 +185,22 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+
+    constructionCivilEngineeringProfessorsViewController *civilEngineeringDept = [[constructionCivilEngineeringProfessorsViewController alloc] init];
+    
+    
+//    test VC
+    emt_cetProfessorsViewController *newEMTDept = [[emt_cetProfessorsViewController alloc] init];
+    
+    
+    
+    if (indexPath.row == 3) {
+        [self.navigationController pushViewController:civilEngineeringDept animated:YES];
+    }
+    
+    if (indexPath.row == 5) {
+        [self.navigationController pushViewController:newEMTDept animated:YES];
+    }
 }
 
 @end

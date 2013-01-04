@@ -51,6 +51,7 @@
 @end
 
 @implementation mathProfessorsViewController
+@synthesize allTableData = _allTableData, filteredTableData = _filteredTableData, isFiltered = _isFiltered, searchDisplay;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -67,9 +68,8 @@
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Math_Professors_List" ofType:@"plist"];
     
     professors = [[NSArray alloc] initWithContentsOfFile:plistPath];
-    
-    
-//    professors = [[NSArray alloc] initWithObjects:@"Professo1", @"Professor Dos", @"Professor Tres", nil];
+    _filteredTableData = [[NSMutableArray alloc] initWithArray:professors];
+
 }
 
 
@@ -77,13 +77,13 @@
 {
     //    ***** WORKING PART ****** //
     //    0,416,174,375
-    tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 44, self.view.bounds.size.width, self.view.bounds.size.height) style:UITableViewStylePlain];
+    tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 89, self.view.bounds.size.width, self.view.bounds.size.height) style:UITableViewStylePlain];
     
     tableView.dataSource = self;
     tableView.delegate = self;
     [self.view addSubview:tableView];
     
-    //    ***** WORKING PART ****** //
+
 }
 
 -(void) backToTableView
@@ -98,7 +98,8 @@
 {
     
     [professorPage removeFromSuperview];
-    [self.view addSubview:tableView];
+//    [self.view addSubview:tableView];
+    self.navigationController.navigationBarHidden = NO;
     
     
 }
@@ -391,15 +392,7 @@
         [email setText:[professorsEmails objectAtIndex:31]];
         [telephone setText:[professorsNumbers objectAtIndex:31]];
     }
-        
-    
-    
-    
-    
-    
-    
-    
-    
+   
     [self.view addSubview:professorPage];
 }
 
@@ -423,16 +416,70 @@
     [self.view addSubview:navBar];
 }
 
+#pragma mark - Search bar setup
+
+-(void) searchbarSetup
+{
+    
+    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 44, tableView.frame.size.width, 45)];
+    
+
+    searchBar.delegate = self;
+    
+    [self.view addSubview:searchBar];
+    
+//    search display stuff
+    
+    searchDisplay = [[UISearchDisplayController alloc] initWithSearchBar:searchBar contentsController:self];
+    
+    [self setSearchDisplay:searchDisplay];
+    [searchDisplay setDelegate:self];
+    [searchDisplay setSearchResultsDataSource:self];
+    [tableView reloadData];
+    tableView.scrollEnabled = YES;
+
+}
+
+-(void) searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
+{
+    if ([searchText length] == 0) {
+        [_filteredTableData removeAllObjects];
+        [_filteredTableData addObjectsFromArray:professors];
+    }
+    else
+    {
+        [_filteredTableData removeAllObjects];
+        
+        for (NSString *string in professors) {
+//            check if string is in professors
+            
+            NSRange r = [string rangeOfString:searchText options:NSCaseInsensitiveSearch];
+            searchedText = [[NSString alloc] init];
+            searchedText = searchText;
+            
+            if (r.location != NSNotFound) {
+                [_filteredTableData addObject:string];
+            }
+        }
+        
+    }
+    [tableView reloadData];
+    
+        NSLog(@"The selected cell is: %@", searchedText);
+}
 
 
 
+#pragma mark - View loading
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.navigationController.navigationBarHidden = NO;
     [self addProfessorsInArray];
     [self tableviewNavBar];
     [self initTableView];
+    [self searchbarSetup];
+    
     
 }
 
@@ -453,7 +500,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [professors count];
+    return [_filteredTableData count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -465,10 +512,19 @@
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        
+        
     }
     
+    cell.textLabel.text = [_filteredTableData objectAtIndex:indexPath.row];
+    
+    /*
     NSString *name = [professors objectAtIndex:indexPath.row];
     cell.textLabel.text = name;
+   */
+   
+    
+    
     
     
     // Configure the cell...
@@ -478,13 +534,28 @@
 
 -(NSString*) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    NSString *sectionName = @"Select A professor";
+    NSString *sectionName = @"Select a professor";
     
     return sectionName;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)theTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    
+        NSLog(@"The selected cell was: %@", searchedText);
+    
+    if ([searchedText isEqualToString:@"bruno"]) {
+        selection = BRUNO;
+        [self professorViewSetup];
+    }
+    
+    indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
+    
+    NSLog(@"the interger path is %@", indexPath);
+    
+#warning  Must fix africk professor part
+    
     if (indexPath.row == AFRICK) {
         selection = AFRICK;
         [self professorViewSetup];

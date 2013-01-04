@@ -38,9 +38,9 @@
     
     
     
-    [self initialViewSetup];
+//    [self initialViewSetup];
     
-//    [self navBarSetup];
+
     
     self.navigationController.navigationBarHidden = NO;
     
@@ -68,8 +68,10 @@
     contentView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
     
     contentView.backgroundColor = [UIColor clearColor];
-    [self setView:contentView];
-    buildings = [[NSArray alloc] initWithObjects:@"Namn Building", @"Atrium Building", @"Pearl Building", @"General Building", @"Vorhees Building", @"Midway Building", nil];
+//    [self setView:contentView];
+
+   
+    [self.view addSubview:contentView];
 }
 
 
@@ -77,6 +79,7 @@
 #pragma mark - Navbar Setup
 -(void) navBarSetup
 {
+//        Need to set tabar up when view is reloaded from another view
     UINavigationBar *navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(self.view.bounds.origin.x , self.view.bounds.origin.y, 320, 44)];
     
     
@@ -91,6 +94,7 @@
     
     
     [self.view addSubview:navBar];
+
 }
 
 #pragma mark - Tableview stuff
@@ -99,7 +103,11 @@
 {
     //    ***** WORKING PART ****** //
     //    0,416,174,375
-    tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height) style:UITableViewStylePlain];
+    
+    
+     buildings = [[NSArray alloc] initWithObjects:@"Namn Building", @"Atrium Building", @"Pearl Building", @"General Building", @"Vorhees Building", @"Midway Building", nil];
+    
+    tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.view.bounds.origin.y, self.view.bounds.size.width, self.view.bounds.size.height) style:UITableViewStylePlain];
     
     tableView.dataSource = self;
     tableView.delegate = self;
@@ -118,7 +126,11 @@
 #warning Need to properly reintialize the initial View Controller
     initialVC *firstView = [[initialVC alloc] init];
     [self presentViewController:firstView animated:YES completion:NULL];
+        [self navBarSetup];
 }
+
+
+
 
 
 - (void)didReceiveMemoryWarning

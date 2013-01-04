@@ -8,6 +8,7 @@
 
 #import "NewViewController.h"
 #include "buildingsViewController.h"
+#import "buildingListViewController.h"
 @interface NewViewController ()
 
 @end
@@ -32,10 +33,9 @@
 
 - (void)viewDidLoad
 {
-
+    self.navigationController.navigationBarHidden = NO;
     [self initialViewSetup];
     
-    [self navBarSetup];
     
   [self initTableView];
 
@@ -62,13 +62,13 @@
 -(void) initialViewSetup
 {
     //    UIView setup
-    UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 44, 174, 419)];
     contentView.autoresizesSubviews = YES;
     contentView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
     
     contentView.backgroundColor = [UIColor clearColor];
-    [self setView:contentView];
-    Floors_N = [[NSArray alloc] initWithObjects:@"1st Floor", @"2nd Floor", @"3rd Floor", @"4th Floor", @"5th Floor", @"6th Floor", @"7th Floor", @"8th Floor", @"9th Floor", @"10th Floor" , @"11th Floor",nil];
+//    [self setView:contentView];
+    Floors_N = [[NSArray alloc] initWithObjects:@"NYCCT",nil];
 }
 
 #pragma mark - Navbar Setup
@@ -97,13 +97,12 @@
 {
     //    ***** WORKING PART ****** //
     //    0,416,174,375
-    tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 45, 174, 375) style:UITableViewStylePlain];
+
     
-    tableView.dataSource = self;
-    tableView.delegate = self;
-    [self.view addSubview:tableView];
-    
-    //    ***** WORKING PART ****** //
+    myTV = [[UITableView alloc] initWithFrame:CGRectMake(0, self.view.bounds.origin.y+34, 174, 45) style:UITableViewStylePlain];
+   
+    [self.view setBackgroundColor:[UIColor clearColor]];
+
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -136,19 +135,25 @@
 
 }
 
+-(void) tableView:(UITableView*) tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0) {
+       
+        buildingListViewController *buildings = [[buildingListViewController alloc] init];
+        [self.navigationController pushViewController:buildings animated:YES];
+    }
+   
+}
+
+
 #pragma mark - 
 
 - (void)viewDidUnload {
     myTV = nil;
+
     [super viewDidUnload];
 }
 
-#pragma mark - Custom Back Button
--(void) backButton
-{
-    buildingsViewController *buildingsView = [[buildingsViewController alloc] init];
-  
-    [self presentViewController:buildingsView animated:YES completion:NULL];
-}
+
 
 @end
