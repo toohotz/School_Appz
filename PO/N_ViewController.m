@@ -8,9 +8,9 @@
 
 #import "N_ViewController.h"
 #import "mathProfessorsViewController.h"
-#import "physicsProfessorsViewController.h"
+#import "physicsProfessorsPageViewController.h"
 #import "CSTProfessorsViewController.h"
-#import "socialScienceViewController.h"
+#import "socialScienveProfessorsViewController.h"
 #import "buildingListViewController.h"
 #import "newStudentFacultyViewController.h"
 #import "math_ProfessorsViewController.h"
@@ -71,7 +71,9 @@
     //    ***** WORKING PART ****** //
     //    0,416,174,375
 //    needs to have the bounds.size.height to be -44 to not cut off bottom row
-    tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 45, 174, self.view.bounds.size.height-44) style:UITableViewStylePlain];
+    tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 33, 174, self.view.bounds.size.height-80) style:UITableViewStylePlain];
+//    tableView.autoresizingMask &= ~UIViewAutoresizingFlexibleBottomMargin;
+
       Floors_N = [[NSArray alloc] initWithObjects:@"1st Floor", @"2nd Floor", @"3rd Floor", @"4th Floor", @"5th Floor", @"6th Floor", @"7th Floor", @"8th Floor", @"9th Floor", @"10th Floor" , @"11th Floor", nil];
     
     
@@ -126,9 +128,9 @@
 {
     
     newStudentFacultyViewController *newStudentFaculty = [[newStudentFacultyViewController alloc] init];
-    physicsProfessorsViewController *physicsProfessors = [[physicsProfessorsViewController alloc] init];
+    physicsProfessorsPageViewController *physicsProfessors = [[physicsProfessorsPageViewController alloc] init];
     CSTProfessorsViewController *cstProfessors = [[CSTProfessorsViewController alloc] init];
-    socialScienceViewController *socialScienceProfessors = [[socialScienceViewController alloc] init];
+    socialScienveProfessorsViewController *socialScienceProfessors = [[socialScienveProfessorsViewController alloc] init];
     math_ProfessorsViewController *mathProfessors = [[math_ProfessorsViewController alloc] init];
     
     if (indexPath.row == 0) {
@@ -136,7 +138,7 @@
     }
     
     if (indexPath.row == 5) {
-        [self presentViewController:socialScienceProfessors animated:YES completion:NULL];
+        [self.navigationController pushViewController:socialScienceProfessors animated:YES];
     }
     
     if (indexPath.row == 6) {
@@ -145,7 +147,7 @@
     }
     
     if (indexPath.row == 7) {
-        [self presentViewController:physicsProfessors animated:YES completion:NULL];
+        [self.navigationController pushViewController:physicsProfessors animated:YES];
     }
     
     if (indexPath.row == 8) {

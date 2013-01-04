@@ -12,7 +12,7 @@
 {
     
     IBOutlet UIWebView *theWebView;
-    UIView *webView;
+//    UIView *webView;
 
 }
 @end

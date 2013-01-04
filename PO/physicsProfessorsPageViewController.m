@@ -1,25 +1,36 @@
 //
-//  newStudentFacultyViewController.m
+//  physicsProfessorsPageViewController.m
 //  School_Appz
 //
-//  Created by Jason on 1/3/13.
+//  Created by Jason on 1/4/13.
 //
 //
 
-#import "newStudentFacultyViewController.h"
-#import "newStudentFacultyPageViewController.h"
+#import "physicsProfessorsPageViewController.h"
+#import "physicsProfessorsVC.h"
 
-#define ALPER 0
-#define DEMARFIO 1
-#define DORESTANT 2
-#define TROIA 3
+#define BARJIS 0
+#define BLAKE 1
+#define BOUDANA 2
+#define BOYKO 3
+#define COHEN 4
+#define GELFAND 5
+#define GRACE 6
+#define KEZERASHVILI 7
+#define LUFENG 8
+#define MATLOFF 9
+#define MCKNIGHT 10
+#define MCLOUGHLIN 11
+#define MANGROO 12
+#define REMSEN 13
+#define TEWANI 14
+#define WISE 15
 
-@interface newStudentFacultyViewController ()
+@interface physicsProfessorsPageViewController ()
 
 @end
 
-
-@implementation newStudentFacultyViewController
+@implementation physicsProfessorsPageViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -30,17 +41,18 @@
     return self;
 }
 
--(void) facultyArraySetup
-{
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"New_Student_List" ofType:@"plist"];
-    faculty = [[NSArray alloc] initWithContentsOfFile:plistPath];
-}
 
+-(void) professorsList
+{
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Physics_Professors_List" ofType:@"plist"];
+    
+    professors = [[NSArray alloc] initWithContentsOfFile:plistPath];
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self facultyArraySetup];
+    [self professorsList];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -66,7 +78,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
-    return [faculty count];
+    return [professors count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -80,8 +92,9 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    NSString *name = [faculty objectAtIndex:indexPath.row];
+    NSString *name = [professors objectAtIndex:indexPath.row];
     cell.textLabel.text = name;
+
     
     return cell;
 }
@@ -129,31 +142,76 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
 
-     newStudentFacultyPageViewController *detailViewController = [[newStudentFacultyPageViewController alloc] init];
-
-
-    if (indexPath.row == ALPER) {
-        detailViewController.facultyChoice = ALPER;
-        
-    }
-
-    if (indexPath.row == DEMARFIO) {
-        detailViewController.facultyChoice = DEMARFIO;
-    }
+     physicsProfessorsVC *detailViewController = [[physicsProfessorsVC alloc] init];
     
-    if (indexPath.row == DORESTANT) {
-        detailViewController.facultyChoice = DORESTANT;
-        
-    }
-    
-    if (indexPath.row == TROIA) {
-        detailViewController.facultyChoice = TROIA;
-    }
-    
-     [self.navigationController pushViewController:detailViewController animated:YES];
      
+    
+    if (indexPath.row == BARJIS) {
+        detailViewController.selection = BARJIS;
+    }
+    
+    if (indexPath.row == BLAKE) {
+        detailViewController.selection = BLAKE;
+    }
+    
+    if (indexPath.row == BOUDANA) {
+        detailViewController.selection = BOUDANA;
+    }
+    
+    if (indexPath.row == BOYKO) {
+        detailViewController.selection = BOYKO;
+    }
+    
+    if (indexPath.row == COHEN) {
+        detailViewController.selection = COHEN;
+    }
+    
+    if (indexPath.row == GELFAND) {
+        detailViewController.selection = GELFAND;
+    }
+    
+    if (indexPath.row == GRACE) {
+        detailViewController.selection = GRACE;
+    }
+    
+    if (indexPath.row == KEZERASHVILI) {
+        detailViewController.selection = KEZERASHVILI;
+    }
+    
+    if (indexPath.row == LUFENG) {
+        detailViewController.selection = LUFENG;
+    }
+    
+    if (indexPath.row == MATLOFF) {
+        detailViewController.selection = MATLOFF;
+    }
+    
+    if (indexPath.row == MCKNIGHT) {
+        detailViewController.selection = MCKNIGHT;
+    }
+    
+    if (indexPath.row == MCLOUGHLIN) {
+        detailViewController.selection = MCLOUGHLIN;
+    }
+    
+    if (indexPath.row == MANGROO) {
+        detailViewController.selection = MANGROO;
+    }
+    
+    if (indexPath.row == REMSEN) {
+        detailViewController.selection = REMSEN;
+    }
+    
+    if (indexPath.row == TEWANI) {
+        detailViewController.selection = TEWANI;
+    }
+    
+    if (indexPath.row == WISE) {
+        detailViewController.selection = WISE;
+    }
+    
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 @end
