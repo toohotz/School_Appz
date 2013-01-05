@@ -11,7 +11,6 @@
 		4322DF0316474F3100BD1BB6 /* socialScience_Professors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4322DF0216474F3100BD1BB6 /* socialScience_Professors.plist */; };
 		4322DF0516474F3C00BD1BB6 /* socialScience_Numbers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4322DF0416474F3C00BD1BB6 /* socialScience_Numbers.plist */; };
 		4322DF0716474F4E00BD1BB6 /* socialScience_Emails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4322DF0616474F4D00BD1BB6 /* socialScience_Emails.plist */; };
-		433C5C25164D642C0050602D /* dentalProfessorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 433C5C24164D642C0050602D /* dentalProfessorsViewController.m */; };
 		43415FC316444CBE0067943F /* mathProfessorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43415FC216444CBE0067943F /* mathProfessorsViewController.m */; };
 		4343231816554C02003795FE /* constructionCivilEngineeringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4343231716554C02003795FE /* constructionCivilEngineeringViewController.m */; };
 		4343231B16554C1E003795FE /* constructionCivilEngineering_List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4343231A16554C1E003795FE /* constructionCivilEngineering_List.plist */; };
@@ -102,6 +101,9 @@
 		4347C747163CA27500978B14 /* Queens_College_Campus(iPhone)@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4347C617163C9F6700978B14 /* Queens_College_Campus(iPhone)@2x.jpg */; };
 		4347C74A163CA41600978B14 /* KeychainWrapper.m in Resources */ = {isa = PBXBuildFile; fileRef = 4347C749163CA40800978B14 /* KeychainWrapper.m */; };
 		4347C74B163CA5AD00978B14 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347C749163CA40800978B14 /* KeychainWrapper.m */; };
+		435B5D511698BF9D003C0921 /* dentalProfessorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435B5D501698BF9D003C0921 /* dentalProfessorsViewController.m */; };
+		435B5D541698C0D1003C0921 /* advertisingGraphicsDesignProfessorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435B5D531698C0D1003C0921 /* advertisingGraphicsDesignProfessorsViewController.m */; };
+		435B5D571698C1AC003C0921 /* advertisingGraphicsDesignProfessorsPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 435B5D561698C1AC003C0921 /* advertisingGraphicsDesignProfessorsPageVC.m */; };
 		435D93B21657456200E891A0 /* EMT_CET_List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 435D93B11657456200E891A0 /* EMT_CET_List.plist */; };
 		435D93B51657456D00E891A0 /* EMT_CET_Emails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 435D93B41657456D00E891A0 /* EMT_CET_Emails.plist */; };
 		435D93B7165745AC00E891A0 /* EMT_CET_Numbers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 435D93B6165745AC00E891A0 /* EMT_CET_Numbers.plist */; };
@@ -171,8 +173,6 @@
 		4322DF0216474F3100BD1BB6 /* socialScience_Professors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = socialScience_Professors.plist; sourceTree = SOURCE_ROOT; };
 		4322DF0416474F3C00BD1BB6 /* socialScience_Numbers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = socialScience_Numbers.plist; sourceTree = SOURCE_ROOT; };
 		4322DF0616474F4D00BD1BB6 /* socialScience_Emails.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = socialScience_Emails.plist; sourceTree = SOURCE_ROOT; };
-		433C5C23164D642C0050602D /* dentalProfessorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dentalProfessorsViewController.h; sourceTree = "<group>"; };
-		433C5C24164D642C0050602D /* dentalProfessorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dentalProfessorsViewController.m; sourceTree = "<group>"; };
 		43415FC116444CBE0067943F /* mathProfessorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mathProfessorsViewController.h; sourceTree = SOURCE_ROOT; };
 		43415FC216444CBE0067943F /* mathProfessorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mathProfessorsViewController.m; sourceTree = SOURCE_ROOT; };
 		4343231616554C02003795FE /* constructionCivilEngineeringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constructionCivilEngineeringViewController.h; sourceTree = "<group>"; };
@@ -313,6 +313,12 @@
 		4347C677163CA0DE00978B14 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		4347C748163CA40800978B14 /* KeychainWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
 		4347C749163CA40800978B14 /* KeychainWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		435B5D4F1698BF9D003C0921 /* dentalProfessorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dentalProfessorsViewController.h; sourceTree = "<group>"; };
+		435B5D501698BF9D003C0921 /* dentalProfessorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dentalProfessorsViewController.m; sourceTree = "<group>"; };
+		435B5D521698C0D1003C0921 /* advertisingGraphicsDesignProfessorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = advertisingGraphicsDesignProfessorsViewController.h; sourceTree = "<group>"; };
+		435B5D531698C0D1003C0921 /* advertisingGraphicsDesignProfessorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = advertisingGraphicsDesignProfessorsViewController.m; sourceTree = "<group>"; };
+		435B5D551698C1AC003C0921 /* advertisingGraphicsDesignProfessorsPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = advertisingGraphicsDesignProfessorsPageVC.h; sourceTree = "<group>"; };
+		435B5D561698C1AC003C0921 /* advertisingGraphicsDesignProfessorsPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = advertisingGraphicsDesignProfessorsPageVC.m; sourceTree = "<group>"; };
 		435D93B11657456200E891A0 /* EMT_CET_List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = EMT_CET_List.plist; path = ../EMT_CET_List.plist; sourceTree = "<group>"; };
 		435D93B41657456D00E891A0 /* EMT_CET_Emails.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = EMT_CET_Emails.plist; path = ../EMT_CET_Emails.plist; sourceTree = "<group>"; };
 		435D93B6165745AC00E891A0 /* EMT_CET_Numbers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EMT_CET_Numbers.plist; sourceTree = "<group>"; };
@@ -470,9 +476,13 @@
 		4347C5B8163C9F6700978B14 /* PO */ = {
 			isa = PBXGroup;
 			children = (
+				435B5D521698C0D1003C0921 /* advertisingGraphicsDesignProfessorsViewController.h */,
+				435B5D531698C0D1003C0921 /* advertisingGraphicsDesignProfessorsViewController.m */,
+				435B5D551698C1AC003C0921 /* advertisingGraphicsDesignProfessorsPageVC.h */,
+				435B5D561698C1AC003C0921 /* advertisingGraphicsDesignProfessorsPageVC.m */,
+				435B5D4F1698BF9D003C0921 /* dentalProfessorsViewController.h */,
+				435B5D501698BF9D003C0921 /* dentalProfessorsViewController.m */,
 				4389014E16965C4C00936C36 /* V_Floors */,
-				433C5C23164D642C0050602D /* dentalProfessorsViewController.h */,
-				433C5C24164D642C0050602D /* dentalProfessorsViewController.m */,
 				43BCA9E516534AE4005E0711 /* C.O.P.E._Numbers.plist */,
 				43BCA9E316534ADC005E0711 /* C.O.P.E._List.plist */,
 				43BCA9E716534AF0005E0711 /* C.O.P.E._Emails.plist */,
@@ -926,7 +936,6 @@
 				43E2AFB61647399800B0DF4F /* CSTProfessorsViewController.m in Sources */,
 				4322DF0016474F0800BD1BB6 /* socialScienceViewController.m in Sources */,
 				43EC5BFA164856A300653B2D /* buildingListViewController.m in Sources */,
-				433C5C25164D642C0050602D /* dentalProfessorsViewController.m in Sources */,
 				436504AC164F5DFF009E9D95 /* AdvertisingGraphicsDesignViewController.m in Sources */,
 				43BCA9DB16534477005E0711 /* New_Student_ListViewController.m in Sources */,
 				43BCA9EE16534BBB005E0711 /* COPEViewController.m in Sources */,
@@ -947,6 +956,9 @@
 				438901601697285A00936C36 /* physicsProfessorsVC.m in Sources */,
 				4389016316972E1700936C36 /* cstProfessorsPageViewController.m in Sources */,
 				4389016616972F0200936C36 /* cstProfessorsVC.m in Sources */,
+				435B5D511698BF9D003C0921 /* dentalProfessorsViewController.m in Sources */,
+				435B5D541698C0D1003C0921 /* advertisingGraphicsDesignProfessorsViewController.m in Sources */,
+				435B5D571698C1AC003C0921 /* advertisingGraphicsDesignProfessorsPageVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

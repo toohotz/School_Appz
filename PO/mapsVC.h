@@ -40,7 +40,7 @@
 
 
 
--(void) locationUpdate:(CLLocation*) location;
+
 
 
 

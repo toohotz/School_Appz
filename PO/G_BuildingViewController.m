@@ -10,6 +10,7 @@
 #import "buildingListViewController.h"
 #import "AdvertisingGraphicsDesignViewController.h"
 #import "COPEViewController.h"
+#import "advertisingGraphicsDesignProfessorsViewController.h"
 
 
 @interface G_BuildingViewController ()
@@ -114,57 +115,17 @@
     return sectionName;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    AdvertisingGraphicsDesignViewController *advertisingGraphicsProfessors = [[AdvertisingGraphicsDesignViewController alloc] init];
+    advertisingGraphicsDesignProfessorsViewController *AGPProfessors = [[advertisingGraphicsDesignProfessorsViewController alloc] init];
     COPEViewController *COPE_People = [[COPEViewController alloc] init];
     
     
     if (indexPath.row == 3 ) {
         
-        NSLog(@"Advertising floor selected");
-        [self presentViewController:advertisingGraphicsProfessors animated:YES completion:NULL];
+        [self.navigationController pushViewController:AGPProfessors animated:YES];
     }
     
     if (indexPath.row == 4) {

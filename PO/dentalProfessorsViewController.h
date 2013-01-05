@@ -2,19 +2,14 @@
 //  dentalProfessorsViewController.h
 //  School_Appz
 //
-//  Created by Jason on 11/9/12.
+//  Created by Jason on 1/5/13.
 //
 //
 
 #import <UIKit/UIKit.h>
 
-@class P_BuildingViewController;
-
-@interface dentalProfessorsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface dentalProfessorsViewController : UITableViewController
 {
-    UITableView *tableView;
     NSArray *professors;
-    UIView *professorPage;
 }
-
 @end
