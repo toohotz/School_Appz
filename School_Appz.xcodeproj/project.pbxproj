@@ -119,6 +119,11 @@
 		438901601697285A00936C36 /* physicsProfessorsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389015F1697285A00936C36 /* physicsProfessorsVC.m */; };
 		4389016316972E1700936C36 /* cstProfessorsPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389016216972E1700936C36 /* cstProfessorsPageViewController.m */; };
 		4389016616972F0200936C36 /* cstProfessorsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4389016516972F0100936C36 /* cstProfessorsVC.m */; };
+		439DDE59169A090C0064773A /* MechanicalEngineeringTechnologyProfessors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 439DDE58169A090C0064773A /* MechanicalEngineeringTechnologyProfessors.plist */; };
+		439DDE5B169A0A830064773A /* MechanicalEngineeringTechnologyNumbers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 439DDE5A169A0A830064773A /* MechanicalEngineeringTechnologyNumbers.plist */; };
+		439DDE5D169A0A8A0064773A /* MechanicalEngineeringTechnologyEmails.plist in Resources */ = {isa = PBXBuildFile; fileRef = 439DDE5C169A0A8A0064773A /* MechanicalEngineeringTechnologyEmails.plist */; };
+		439DDE60169A0C0E0064773A /* mechanicalEngineeringProfessorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 439DDE5F169A0C0E0064773A /* mechanicalEngineeringProfessorsViewController.m */; };
+		439DDE63169A0DAC0064773A /* mechanicalEngineeringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 439DDE62169A0DAC0064773A /* mechanicalEngineeringVC.m */; };
 		43A4DEAE1668728D0053C5DE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4347C652163CA01D00978B14 /* Default.png */; };
 		43A4DEB3166872B30053C5DE /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4DEB0166872B30053C5DE /* splashscreen.png */; };
 		43A4DEB4166872B30053C5DE /* splashscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4DEB1166872B30053C5DE /* splashscreen@2x.png */; };
@@ -346,6 +351,13 @@
 		4389016216972E1700936C36 /* cstProfessorsPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cstProfessorsPageViewController.m; path = PO/cstProfessorsPageViewController.m; sourceTree = SOURCE_ROOT; };
 		4389016416972F0100936C36 /* cstProfessorsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cstProfessorsVC.h; sourceTree = SOURCE_ROOT; };
 		4389016516972F0100936C36 /* cstProfessorsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cstProfessorsVC.m; sourceTree = SOURCE_ROOT; };
+		439DDE58169A090C0064773A /* MechanicalEngineeringTechnologyProfessors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MechanicalEngineeringTechnologyProfessors.plist; sourceTree = "<group>"; };
+		439DDE5A169A0A830064773A /* MechanicalEngineeringTechnologyNumbers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MechanicalEngineeringTechnologyNumbers.plist; sourceTree = "<group>"; };
+		439DDE5C169A0A8A0064773A /* MechanicalEngineeringTechnologyEmails.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MechanicalEngineeringTechnologyEmails.plist; sourceTree = "<group>"; };
+		439DDE5E169A0C0E0064773A /* mechanicalEngineeringProfessorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mechanicalEngineeringProfessorsViewController.h; sourceTree = "<group>"; };
+		439DDE5F169A0C0E0064773A /* mechanicalEngineeringProfessorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mechanicalEngineeringProfessorsViewController.m; sourceTree = "<group>"; };
+		439DDE61169A0DAB0064773A /* mechanicalEngineeringVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mechanicalEngineeringVC.h; sourceTree = "<group>"; };
+		439DDE62169A0DAC0064773A /* mechanicalEngineeringVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mechanicalEngineeringVC.m; sourceTree = "<group>"; };
 		43A4DEB0166872B30053C5DE /* splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreen.png; sourceTree = "<group>"; };
 		43A4DEB1166872B30053C5DE /* splashscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splashscreen@2x.png"; sourceTree = "<group>"; };
 		43A4DEB5166872FF0053C5DE /* splashscreen-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splashscreen-568@2x.png"; sourceTree = "<group>"; };
@@ -715,6 +727,13 @@
 		4389014E16965C4C00936C36 /* V_Floors */ = {
 			isa = PBXGroup;
 			children = (
+				439DDE58169A090C0064773A /* MechanicalEngineeringTechnologyProfessors.plist */,
+				439DDE61169A0DAB0064773A /* mechanicalEngineeringVC.h */,
+				439DDE62169A0DAC0064773A /* mechanicalEngineeringVC.m */,
+				439DDE5A169A0A830064773A /* MechanicalEngineeringTechnologyNumbers.plist */,
+				439DDE5C169A0A8A0064773A /* MechanicalEngineeringTechnologyEmails.plist */,
+				439DDE5E169A0C0E0064773A /* mechanicalEngineeringProfessorsViewController.h */,
+				439DDE5F169A0C0E0064773A /* mechanicalEngineeringProfessorsViewController.m */,
 				4389015216965EBE00936C36 /* constructionCivilEngineeringPageVC.h */,
 				4389015316965EBE00936C36 /* constructionCivilEngineeringPageVC.m */,
 				4389014F16965D3800936C36 /* constructionCivilEngineeringProfessorsViewController.h */,
@@ -896,6 +915,9 @@
 				43C9DA5C166996F800217281 /* Proff+Non-Selected.png in Resources */,
 				43C9DA5D166996F800217281 /* Proff+Selected.png in Resources */,
 				43C9DA60166998AF00217281 /* eSims+Non-Selected.png in Resources */,
+				439DDE59169A090C0064773A /* MechanicalEngineeringTechnologyProfessors.plist in Resources */,
+				439DDE5B169A0A830064773A /* MechanicalEngineeringTechnologyNumbers.plist in Resources */,
+				439DDE5D169A0A8A0064773A /* MechanicalEngineeringTechnologyEmails.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -959,6 +981,8 @@
 				435B5D511698BF9D003C0921 /* dentalProfessorsViewController.m in Sources */,
 				435B5D541698C0D1003C0921 /* advertisingGraphicsDesignProfessorsViewController.m in Sources */,
 				435B5D571698C1AC003C0921 /* advertisingGraphicsDesignProfessorsPageVC.m in Sources */,
+				439DDE60169A0C0E0064773A /* mechanicalEngineeringProfessorsViewController.m in Sources */,
+				439DDE63169A0DAC0064773A /* mechanicalEngineeringVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

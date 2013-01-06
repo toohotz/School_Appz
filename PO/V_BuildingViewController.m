@@ -10,6 +10,7 @@
 #import "buildingListViewController.h"
 #import "emt_cetProfessorsViewController.h"
 #import "constructionCivilEngineeringProfessorsViewController.h"
+#import "mechanicalEngineeringProfessorsViewController.h"
 
 
 @interface V_BuildingViewController ()
@@ -192,7 +193,7 @@
 //    test VC
     emt_cetProfessorsViewController *newEMTDept = [[emt_cetProfessorsViewController alloc] init];
     
-    
+    mechanicalEngineeringProfessorsViewController *mechanicalEngineeringDept = [[mechanicalEngineeringProfessorsViewController alloc] init];
     
     if (indexPath.row == 3) {
         [self.navigationController pushViewController:civilEngineeringDept animated:YES];
@@ -200,6 +201,10 @@
     
     if (indexPath.row == 5) {
         [self.navigationController pushViewController:newEMTDept animated:YES];
+    }
+    
+    if (indexPath.row == 4) {
+        [self.navigationController pushViewController:mechanicalEngineeringDept animated:YES];
     }
 }
 
